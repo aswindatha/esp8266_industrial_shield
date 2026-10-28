@@ -1,5 +1,7 @@
 # Part 3 — KiCad 8 / 9 Schematic Generation Procedure
 
+> **Superseded in part.** Apply the ECOs in [`05_layout_execution_plan.md`](05_layout_execution_plan.md) §0 before drawing: J2 = ultrasonic, J27 = UART, U12 + C20 added, RN7/RN8 added, H1/H2/TP1–TP3 deleted, GND split into `GND`/`GND_FIELD` with R31, D1 = SMAJ15A, D2 = SS54.
+
 Everything below applies to **KiCad 8.0 and 9.0** (identical menus; 9.0 only adds features we do not use). Work through the steps in order — the netlist in Part 1 is what you should end up with.
 
 ---

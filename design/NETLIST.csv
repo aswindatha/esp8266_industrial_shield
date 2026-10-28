@@ -5,7 +5,7 @@ Net,Component,Pin,PinFunction,Value,Footprint
 +12V,C19,1,+,470uF/25V,Capacitor_SMD:CP_Elec_10x10.5
 +12V,C2,1,1,100nF/100V,Capacitor_SMD:C_0805_2012Metric
 +12V,C3,1,1,100nF/50V,Capacitor_SMD:C_0805_2012Metric
-+12V,D2,1,K,SS34,Diode_SMD:D_SMA
++12V,D2,1,K,SS54,Diode_SMD:D_SMA
 +12V,J10,1,M+,MOTOR 8 5.00mm,TerminalBlock:TerminalBlock_bornier-2_P5.00mm
 +12V,J3,1,M+,MOTOR 1 5.00mm,TerminalBlock:TerminalBlock_bornier-2_P5.00mm
 +12V,J4,1,M+,MOTOR 2 5.00mm,TerminalBlock:TerminalBlock_bornier-2_P5.00mm
@@ -19,6 +19,8 @@ Net,Component,Pin,PinFunction,Value,Footprint
 +12V,U1,4,EN,XL1509-5.0E1,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
 +12V,U6,10,COM,ULN2803ADWR,Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm
 +12V,U7,10,COM,ULN2803ADWR,Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm
++12V_RAW,F1,1,in,PTC 4A,Fuse:Fuse_1812_4532Metric
++12V_RAW,J1,1,P1,12V IN 5.00mm,TerminalBlock:TerminalBlock_bornier-2_P5.00mm
 +3V3,C10,1,1,100nF,Capacitor_SMD:C_0805_2012Metric
 +3V3,C11,1,1,10uF,Capacitor_SMD:C_0805_2012Metric
 +3V3,C13,1,1,100nF,Capacitor_SMD:C_0805_2012Metric
@@ -26,9 +28,7 @@ Net,Component,Pin,PinFunction,Value,Footprint
 +3V3,C7,1,1,22uF/16V,Capacitor_SMD:C_1210_3225Metric
 +3V3,C8,1,1,100nF/50V,Capacitor_SMD:C_0805_2012Metric
 +3V3,C9,1,+,100uF/10V,Capacitor_SMD:CP_Elec_6.3x5.4
-+3V3,H1,1,1,SPARE 2x5,Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical
-+3V3,H2,2,2,PROG 1x6,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical
-+3V3,J2,1,1,UART 4P 5.00mm,TerminalBlock:TerminalBlock_bornier-4_P5.00mm
++3V3,J27,1,3V3 OUT,UART 4P 5.00mm,TerminalBlock:TerminalBlock_bornier-4_P5.00mm
 +3V3,R1,2,2,10k,Resistor_SMD:R_0805_2012Metric
 +3V3,R10,2,2,10k,Resistor_SMD:R_0805_2012Metric
 +3V3,R2,2,2,10k,Resistor_SMD:R_0805_2012Metric
@@ -53,20 +53,20 @@ Net,Component,Pin,PinFunction,Value,Footprint
 +3V3,RN4,2,2,10k x4,Resistor_SMD:R_Array_Concave_4x0612
 +3V3,RN4,3,3,10k x4,Resistor_SMD:R_Array_Concave_4x0612
 +3V3,RN4,4,4,10k x4,Resistor_SMD:R_Array_Concave_4x0612
-+3V3,TP2,1,1,+3V3,Connector:TestPoint
 +3V3,U2,2,VOUT,AMS1117-3.3,Package_TO_SOT_SMD:SOT-223-3_TabPin2
 +3V3,U3,8,VCC,ESP-12F,RF_Module:ESP-12E
 +3V3,U4,9,VDD,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm
 +3V3,U5,9,VDD,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm
 +3V3,U5,15,A0,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm
 +5V,C17,1,1,100nF,Capacitor_SMD:C_0805_2012Metric
++5V,C20,1,1,100nF,Capacitor_SMD:C_0805_2012Metric
 +5V,C4,1,+,220uF/25V,Capacitor_SMD:CP_Elec_8x10.2
 +5V,C5,1,1,100nF/50V,Capacitor_SMD:C_0805_2012Metric
 +5V,C6,1,1,10uF/16V,Capacitor_SMD:C_0805_2012Metric
-+5V,J27,1,VCC,HC-SR04 4P 2.5mm,Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical
++5V,J2,1,VCC,HC-SR04 4P 5.00mm,TerminalBlock:TerminalBlock_bornier-4_P5.00mm
 +5V,L1,2,2,33uH 2A,Inductor_SMD:L_8x8mm
-+5V,TP1,1,1,+5V,Connector:TestPoint
 +5V,U1,3,FB,XL1509-5.0E1,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
++5V,U12,5,VCC,74AHC1G34,Package_TO_SOT_SMD:SOT-23-5
 +5V,U2,3,VIN,AMS1117-3.3,Package_TO_SOT_SMD:SOT-223-3_TabPin2
 FLD_12V,D10,1,K,1N4148W,Diode_SMD:D_SOD-123
 FLD_12V,D11,1,K,1N4148W,Diode_SMD:D_SOD-123
@@ -117,33 +117,22 @@ FLD_12V,U9,1,A1,PS2501-4,Package_DIP:DIP-16_W7.62mm
 FLD_12V,U9,3,A2,PS2501-4,Package_DIP:DIP-16_W7.62mm
 FLD_12V,U9,5,A3,PS2501-4,Package_DIP:DIP-16_W7.62mm
 FLD_12V,U9,7,A4,PS2501-4,Package_DIP:DIP-16_W7.62mm
-GND,C1,2,-,100uF/50V,Capacitor_SMD:CP_Elec_6.3x7.7
 GND,C10,2,2,100nF,Capacitor_SMD:C_0805_2012Metric
 GND,C11,2,2,10uF,Capacitor_SMD:C_0805_2012Metric
 GND,C12,2,2,100nF,Capacitor_SMD:C_0805_2012Metric
 GND,C13,2,2,100nF,Capacitor_SMD:C_0805_2012Metric
 GND,C14,2,2,100nF,Capacitor_SMD:C_0805_2012Metric
-GND,C15,2,2,100nF,Capacitor_SMD:C_0805_2012Metric
-GND,C16,2,2,100nF,Capacitor_SMD:C_0805_2012Metric
 GND,C17,2,2,100nF,Capacitor_SMD:C_0805_2012Metric
 GND,C18,2,2,100nF,Capacitor_SMD:C_0805_2012Metric
-GND,C19,2,-,470uF/25V,Capacitor_SMD:CP_Elec_10x10.5
-GND,C2,2,2,100nF/100V,Capacitor_SMD:C_0805_2012Metric
-GND,C3,2,2,100nF/50V,Capacitor_SMD:C_0805_2012Metric
-GND,C4,2,-,220uF/25V,Capacitor_SMD:CP_Elec_8x10.2
-GND,C5,2,2,100nF/50V,Capacitor_SMD:C_0805_2012Metric
+GND,C20,2,2,100nF,Capacitor_SMD:C_0805_2012Metric
 GND,C6,2,2,10uF/16V,Capacitor_SMD:C_0805_2012Metric
 GND,C7,2,2,22uF/16V,Capacitor_SMD:C_1210_3225Metric
 GND,C8,2,2,100nF/50V,Capacitor_SMD:C_0805_2012Metric
 GND,C9,2,-,100uF/10V,Capacitor_SMD:CP_Elec_6.3x5.4
-GND,D1,2,A,SMAJ28A,Diode_SMD:D_SMA
-GND,D3,2,A,SS34,Diode_SMD:D_SMA
-GND,H1,2,2,SPARE 2x5,Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical
-GND,H2,1,1,PROG 1x6,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical
-GND,J1,2,P,12V IN 5.00mm,TerminalBlock:TerminalBlock_bornier-2_P5.00mm
-GND,J2,4,4,UART 4P 5.00mm,TerminalBlock:TerminalBlock_bornier-4_P5.00mm
-GND,J27,4,GND,HC-SR04 4P 2.5mm,Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical
+GND,J2,4,GND,HC-SR04 4P 5.00mm,TerminalBlock:TerminalBlock_bornier-4_P5.00mm
+GND,J27,4,GND,UART 4P 5.00mm,TerminalBlock:TerminalBlock_bornier-4_P5.00mm
 GND,R28,2,2,2k,Resistor_SMD:R_0805_2012Metric
+GND,R31,2,2,0R 2A,Resistor_SMD:R_1206_3216Metric
 GND,R4,2,2,10k,Resistor_SMD:R_0805_2012Metric
 GND,R6,2,2,10k,Resistor_SMD:R_0805_2012Metric
 GND,RN5,5,5,10k x4,Resistor_SMD:R_Array_Concave_4x0612
@@ -154,13 +143,16 @@ GND,RN6,5,5,10k x4,Resistor_SMD:R_Array_Concave_4x0612
 GND,RN6,6,6,10k x4,Resistor_SMD:R_Array_Concave_4x0612
 GND,RN6,7,7,10k x4,Resistor_SMD:R_Array_Concave_4x0612
 GND,RN6,8,8,10k x4,Resistor_SMD:R_Array_Concave_4x0612
+GND,RN7,5,5,10k x4,Resistor_SMD:R_Array_Concave_4x0612
+GND,RN7,6,6,10k x4,Resistor_SMD:R_Array_Concave_4x0612
+GND,RN7,7,7,10k x4,Resistor_SMD:R_Array_Concave_4x0612
+GND,RN7,8,8,10k x4,Resistor_SMD:R_Array_Concave_4x0612
+GND,RN8,5,5,10k x4,Resistor_SMD:R_Array_Concave_4x0612
+GND,RN8,6,6,10k x4,Resistor_SMD:R_Array_Concave_4x0612
+GND,RN8,7,7,10k x4,Resistor_SMD:R_Array_Concave_4x0612
+GND,RN8,8,8,10k x4,Resistor_SMD:R_Array_Concave_4x0612
 GND,SW1,2,2,FLASH,Button_Switch_SMD:SW_SPST_TL3342
 GND,SW2,2,2,RESET,Button_Switch_SMD:SW_SPST_TL3342
-GND,TP3,1,1,GND,Connector:TestPoint
-GND,U1,5,GND,XL1509-5.0E1,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
-GND,U1,6,GND,XL1509-5.0E1,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
-GND,U1,7,GND,XL1509-5.0E1,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
-GND,U1,8,GND,XL1509-5.0E1,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
 GND,U10,9,E4,PS2501-4,Package_DIP:DIP-16_W7.62mm
 GND,U10,11,E3,PS2501-4,Package_DIP:DIP-16_W7.62mm
 GND,U10,13,E2,PS2501-4,Package_DIP:DIP-16_W7.62mm
@@ -169,6 +161,7 @@ GND,U11,9,E4,PS2501-4,Package_DIP:DIP-16_W7.62mm
 GND,U11,11,E3,PS2501-4,Package_DIP:DIP-16_W7.62mm
 GND,U11,13,E2,PS2501-4,Package_DIP:DIP-16_W7.62mm
 GND,U11,15,E1,PS2501-4,Package_DIP:DIP-16_W7.62mm
+GND,U12,2,GND,74AHC1G34,Package_TO_SOT_SMD:SOT-23-5
 GND,U2,1,GND,AMS1117-3.3,Package_TO_SOT_SMD:SOT-223-3_TabPin2
 GND,U3,9,GND bottom1,ESP-12F,RF_Module:ESP-12E
 GND,U3,10,GND bottom2,ESP-12F,RF_Module:ESP-12E
@@ -184,8 +177,6 @@ GND,U4,17,A2,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm
 GND,U5,10,VSS,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm
 GND,U5,16,A1,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm
 GND,U5,17,A2,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm
-GND,U6,9,GND,ULN2803ADWR,Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm
-GND,U7,9,GND,ULN2803ADWR,Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm
 GND,U8,9,E4,PS2501-4,Package_DIP:DIP-16_W7.62mm
 GND,U8,11,E3,PS2501-4,Package_DIP:DIP-16_W7.62mm
 GND,U8,13,E2,PS2501-4,Package_DIP:DIP-16_W7.62mm
@@ -194,12 +185,30 @@ GND,U9,9,E4,PS2501-4,Package_DIP:DIP-16_W7.62mm
 GND,U9,11,E3,PS2501-4,Package_DIP:DIP-16_W7.62mm
 GND,U9,13,E2,PS2501-4,Package_DIP:DIP-16_W7.62mm
 GND,U9,15,E1,PS2501-4,Package_DIP:DIP-16_W7.62mm
+GND_FIELD,C1,2,-,100uF/50V,Capacitor_SMD:CP_Elec_6.3x7.7
+GND_FIELD,C15,2,2,100nF,Capacitor_SMD:C_0805_2012Metric
+GND_FIELD,C16,2,2,100nF,Capacitor_SMD:C_0805_2012Metric
+GND_FIELD,C19,2,-,470uF/25V,Capacitor_SMD:CP_Elec_10x10.5
+GND_FIELD,C2,2,2,100nF/100V,Capacitor_SMD:C_0805_2012Metric
+GND_FIELD,C3,2,2,100nF/50V,Capacitor_SMD:C_0805_2012Metric
+GND_FIELD,C4,2,-,220uF/25V,Capacitor_SMD:CP_Elec_8x10.2
+GND_FIELD,C5,2,2,100nF/50V,Capacitor_SMD:C_0805_2012Metric
+GND_FIELD,D1,2,A,SMAJ15A,Diode_SMD:D_SMA
+GND_FIELD,D3,2,A,SS34,Diode_SMD:D_SMA
+GND_FIELD,J1,2,P2,12V IN 5.00mm,TerminalBlock:TerminalBlock_bornier-2_P5.00mm
+GND_FIELD,R31,1,1,0R 2A,Resistor_SMD:R_1206_3216Metric
+GND_FIELD,U1,5,GND,XL1509-5.0E1,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+GND_FIELD,U1,6,GND,XL1509-5.0E1,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+GND_FIELD,U1,7,GND,XL1509-5.0E1,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+GND_FIELD,U1,8,GND,XL1509-5.0E1,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+GND_FIELD,U6,9,GND,ULN2803ADWR,Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm
+GND_FIELD,U7,9,GND,ULN2803ADWR,Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm
 ADC,TP4,1,1,ADC,Connector:TestPoint
 ADC,U3,2,ADC/TOUT,ESP-12F,RF_Module:ESP-12E
 ECHO,R27,2,2,1k,Resistor_SMD:R_0805_2012Metric
 ECHO,R28,1,1,2k,Resistor_SMD:R_0805_2012Metric
 ECHO,U3,5,GPIO14,ESP-12F,RF_Module:ESP-12E
-ECHO_RAW,J27,3,ECHO,HC-SR04 4P 2.5mm,Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical
+ECHO_RAW,J2,3,ECHO,HC-SR04 4P 5.00mm,TerminalBlock:TerminalBlock_bornier-4_P5.00mm
 ECHO_RAW,R27,1,1,1k,Resistor_SMD:R_0805_2012Metric
 EN,C12,1,1,100nF,Capacitor_SMD:C_0805_2012Metric
 EN,R1,1,1,10k,Resistor_SMD:R_0805_2012Metric
@@ -208,21 +217,21 @@ EXP1_RST,R9,1,1,10k,Resistor_SMD:R_0805_2012Metric
 EXP1_RST,U4,18,RESET,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm
 EXP2_RST,R10,1,1,10k,Resistor_SMD:R_0805_2012Metric
 EXP2_RST,U5,18,RESET,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm
-EXP_B0,H1,3,GPB0,SPARE 2x5,Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical
+EXP_B0,RN7,1,1,10k x4,Resistor_SMD:R_Array_Concave_4x0612
 EXP_B0,U4,1,GPB0,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm
-EXP_B1,H1,4,GPB1,SPARE 2x5,Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical
+EXP_B1,RN7,2,2,10k x4,Resistor_SMD:R_Array_Concave_4x0612
 EXP_B1,U4,2,GPB1,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm
-EXP_B2,H1,5,GPB2,SPARE 2x5,Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical
+EXP_B2,RN7,3,3,10k x4,Resistor_SMD:R_Array_Concave_4x0612
 EXP_B2,U4,3,GPB2,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm
-EXP_B3,H1,6,GPB3,SPARE 2x5,Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical
+EXP_B3,RN7,4,4,10k x4,Resistor_SMD:R_Array_Concave_4x0612
 EXP_B3,U4,4,GPB3,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm
-EXP_B4,H1,7,GPB4,SPARE 2x5,Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical
+EXP_B4,RN8,1,1,10k x4,Resistor_SMD:R_Array_Concave_4x0612
 EXP_B4,U4,5,GPB4,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm
-EXP_B5,H1,8,GPB5,SPARE 2x5,Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical
+EXP_B5,RN8,2,2,10k x4,Resistor_SMD:R_Array_Concave_4x0612
 EXP_B5,U4,6,GPB5,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm
-EXP_B6,H1,9,GPB6,SPARE 2x5,Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical
+EXP_B6,RN8,3,3,10k x4,Resistor_SMD:R_Array_Concave_4x0612
 EXP_B6,U4,7,GPB6,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm
-EXP_B7,H1,10,GPB7,SPARE 2x5,Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical
+EXP_B7,RN8,4,4,10k x4,Resistor_SMD:R_Array_Concave_4x0612
 EXP_B7,U4,8,GPB7,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm
 FL10_N,J20,2,SIG,FIELD 10 5.00mm,TerminalBlock:TerminalBlock_bornier-2_P5.00mm
 FL10_N,R20,2,2,1.2k 0.25W,Resistor_SMD:R_1206_3216Metric
@@ -256,7 +265,6 @@ FL8_N,J18,2,SIG,FIELD 8 5.00mm,TerminalBlock:TerminalBlock_bornier-2_P5.00mm
 FL8_N,R18,2,2,1.2k 0.25W,Resistor_SMD:R_1206_3216Metric
 FL9_N,J19,2,SIG,FIELD 9 5.00mm,TerminalBlock:TerminalBlock_bornier-2_P5.00mm
 FL9_N,R19,2,2,1.2k 0.25W,Resistor_SMD:R_1206_3216Metric
-GPIO0,H2,5,5,PROG 1x6,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical
 GPIO0,R3,1,1,10k,Resistor_SMD:R_0805_2012Metric
 GPIO0,SW1,1,1,FLASH,Button_Switch_SMD:SW_SPST_TL3342
 GPIO0,U3,18,GPIO0,ESP-12F,RF_Module:ESP-12E
@@ -421,12 +429,10 @@ OPT9_K,D12,2,A,1N4148W,Diode_SMD:D_SOD-123
 OPT9_K,R19,1,1,1.2k 0.25W,Resistor_SMD:R_1206_3216Metric
 OPT9_K,U10,2,K1,PS2501-4,Package_DIP:DIP-16_W7.62mm
 RST,C18,1,1,100nF,Capacitor_SMD:C_0805_2012Metric
-RST,H2,6,6,PROG 1x6,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical
 RST,R2,1,1,10k,Resistor_SMD:R_0805_2012Metric
 RST,SW2,1,1,RESET,Button_Switch_SMD:SW_SPST_TL3342
 RST,U3,1,RST,ESP-12F,RF_Module:ESP-12E
-RXD0,H2,4,4,PROG 1x6,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical
-RXD0,J2,3,3,UART 4P 5.00mm,TerminalBlock:TerminalBlock_bornier-4_P5.00mm
+RXD0,J27,3,RXD,UART 4P 5.00mm,TerminalBlock:TerminalBlock_bornier-4_P5.00mm
 RXD0,U3,21,RXD0/GPIO3,ESP-12F,RF_Module:ESP-12E
 SCL,R8,1,1,4.7k,Resistor_SMD:R_0805_2012Metric
 SCL,U3,19,GPIO5,ESP-12F,RF_Module:ESP-12E
@@ -439,14 +445,13 @@ SDA,U5,13,SDA,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm
 SW_NODE,D3,1,K,SS34,Diode_SMD:D_SMA
 SW_NODE,L1,1,1,33uH 2A,Inductor_SMD:L_8x8mm
 SW_NODE,U1,2,SW,XL1509-5.0E1,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
-TRIG,J27,2,TRIG,HC-SR04 4P 2.5mm,Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical
 TRIG,R6,1,1,10k,Resistor_SMD:R_0805_2012Metric
+TRIG,U12,1,A,74AHC1G34,Package_TO_SOT_SMD:SOT-23-5
 TRIG,U3,6,GPIO12,ESP-12F,RF_Module:ESP-12E
-TXD0,H2,3,3,PROG 1x6,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical
-TXD0,J2,2,2,UART 4P 5.00mm,TerminalBlock:TerminalBlock_bornier-4_P5.00mm
+TRIG_BUF,J2,2,TRIG,HC-SR04 4P 5.00mm,TerminalBlock:TerminalBlock_bornier-4_P5.00mm
+TRIG_BUF,U12,4,Y,74AHC1G34,Package_TO_SOT_SMD:SOT-23-5
+TXD0,J27,2,TXD,UART 4P 5.00mm,TerminalBlock:TerminalBlock_bornier-4_P5.00mm
 TXD0,U3,22,TXD0/GPIO1,ESP-12F,RF_Module:ESP-12E
-VIN_A,D1,1,K,SMAJ28A,Diode_SMD:D_SMA
-VIN_A,D2,2,A,SS34,Diode_SMD:D_SMA
+VIN_A,D1,1,K,SMAJ15A,Diode_SMD:D_SMA
+VIN_A,D2,2,A,SS54,Diode_SMD:D_SMA
 VIN_A,F1,2,out,PTC 4A,Fuse:Fuse_1812_4532Metric
-VIN_RAW,F1,1,in,PTC 4A,Fuse:Fuse_1812_4532Metric
-VIN_RAW,J1,1,P,12V IN 5.00mm,TerminalBlock:TerminalBlock_bornier-2_P5.00mm

@@ -33,37 +33,37 @@ def add(ref, value, fp, pins, note=""):
 
 # ---------------------------------------------------------------- power chain
 add("J1", "12V IN 5.00mm", "TerminalBlock:TerminalBlock_bornier-2_P5.00mm",
-    {"1": ("VIN_RAW", "P"), "2": ("GND", "P")}, "screw terminal")
+    {"1": ("+12V_RAW", "P1"), "2": ("GND_FIELD", "P2")}, "screw terminal")
 
 add("F1", "PTC 4A", "Fuse:Fuse_1812_4532Metric",
-    {"1": ("VIN_RAW", "in"), "2": ("VIN_A", "out")}, "Bourns MF-R400")
+    {"1": ("+12V_RAW", "in"), "2": ("VIN_A", "out")}, "Bourns MF-R400")
 
-add("D1", "SMAJ28A", "Diode_SMD:D_SMA",
-    {"1": ("VIN_A", "K"), "2": ("GND", "A")}, "TVS, cathode to rail")
+add("D1", "SMAJ15A", "Diode_SMD:D_SMA",
+    {"1": ("VIN_A", "K"), "2": ("GND_FIELD", "A")}, "TVS, VC 24.4 V < 40 V XL1509 limit")
 
-add("D2", "SS34", "Diode_SMD:D_SMA",
-    {"1": ("+12V", "K"), "2": ("VIN_A", "A")}, "reverse polarity")
+add("D2", "SS54", "Diode_SMD:D_SMA",
+    {"1": ("+12V", "K"), "2": ("VIN_A", "A")}, "reverse polarity, 5 A")
 
 add("C1", "100uF/50V", "Capacitor_SMD:CP_Elec_6.3x7.7",
-    {"1": ("+12V", "+"), "2": ("GND", "-")})
+    {"1": ("+12V", "+"), "2": ("GND_FIELD", "-")})
 add("C2", "100nF/100V", "Capacitor_SMD:C_0805_2012Metric",
-    {"1": ("+12V", "1"), "2": ("GND", "2")})
+    {"1": ("+12V", "1"), "2": ("GND_FIELD", "2")})
 add("C3", "100nF/50V", "Capacitor_SMD:C_0805_2012Metric",
-    {"1": ("+12V", "1"), "2": ("GND", "2")}, "at U1 VIN")
+    {"1": ("+12V", "1"), "2": ("GND_FIELD", "2")}, "at U1 VIN")
 
 add("U1", "XL1509-5.0E1", "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
     {"1": ("+12V", "VIN"), "2": ("SW_NODE", "SW"), "3": ("+5V", "FB"),
-     "4": ("+12V", "EN"), "5": ("GND", "GND"), "6": ("GND", "GND"),
-     "7": ("GND", "GND"), "8": ("GND", "GND")}, "pins 5-8 = GND")
+     "4": ("+12V", "EN"), "5": ("GND_FIELD", "GND"), "6": ("GND_FIELD", "GND"),
+     "7": ("GND_FIELD", "GND"), "8": ("GND_FIELD", "GND")}, "pins 5-8 = GND_FIELD")
 
 add("L1", "33uH 2A", "Inductor_SMD:L_8x8mm",
     {"1": ("SW_NODE", "1"), "2": ("+5V", "2")}, "8D43 / SRN8040")
 add("D3", "SS34", "Diode_SMD:D_SMA",
-    {"1": ("SW_NODE", "K"), "2": ("GND", "A")}, "freewheel")
+    {"1": ("SW_NODE", "K"), "2": ("GND_FIELD", "A")}, "freewheel")
 add("C4", "220uF/25V", "Capacitor_SMD:CP_Elec_8x10.2",
-    {"1": ("+5V", "+"), "2": ("GND", "-")})
+    {"1": ("+5V", "+"), "2": ("GND_FIELD", "-")})
 add("C5", "100nF/50V", "Capacitor_SMD:C_0805_2012Metric",
-    {"1": ("+5V", "1"), "2": ("GND", "2")})
+    {"1": ("+5V", "1"), "2": ("GND_FIELD", "2")})
 
 add("U2", "AMS1117-3.3", "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
     {"1": ("GND", "GND"), "2": ("+3V3", "VOUT"), "3": ("+5V", "VIN")},
@@ -77,7 +77,11 @@ add("C8", "100nF/50V", "Capacitor_SMD:C_0805_2012Metric",
 add("C9", "100uF/10V", "Capacitor_SMD:CP_Elec_6.3x5.4",
     {"1": ("+3V3", "+"), "2": ("GND", "-")})
 add("C19", "470uF/25V", "Capacitor_SMD:CP_Elec_10x10.5",
-    {"1": ("+12V", "+"), "2": ("GND", "-")}, "motor bulk, recommended")
+    {"1": ("+12V", "+"), "2": ("GND_FIELD", "-")}, "motor bulk, on field return")
+
+add("R31", "0R 2A", "Resistor_SMD:R_1206_3216Metric",
+    {"1": ("GND_FIELD", "1"), "2": ("GND", "2")},
+    "single star point: field/power ground to logic ground")
 
 # ------------------------------------------------------------------------ MCU
 add("U3", "ESP-12F", "RF_Module:ESP-12E",
@@ -122,28 +126,21 @@ add("C10", "100nF", "Capacitor_SMD:C_0805_2012Metric",
 add("C11", "10uF", "Capacitor_SMD:C_0805_2012Metric",
     {"1": ("+3V3", "1"), "2": ("GND", "2")})
 
-add("J2", "UART 4P 5.00mm", "TerminalBlock:TerminalBlock_bornier-4_P5.00mm",
-    {"1": ("+3V3", "1"), "2": ("TXD0", "2"), "3": ("RXD0", "3"), "4": ("GND", "4")},
-    "3V3 is OUTPUT only - do not back-power")
+add("J2", "HC-SR04 4P 5.00mm", "TerminalBlock:TerminalBlock_bornier-4_P5.00mm",
+    {"1": ("+5V", "VCC"), "2": ("TRIG_BUF", "TRIG"),
+     "3": ("ECHO_RAW", "ECHO"), "4": ("GND", "GND")},
+    "ultrasonic: 5V, Trig, Echo, GND - all screw terminal")
 
-add("H2", "PROG 1x6", "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
-    {"1": ("GND", "1"), "2": ("+3V3", "2"), "3": ("TXD0", "3"),
-     "4": ("RXD0", "4"), "5": ("GPIO0", "5"), "6": ("RST", "6")},
-    "recommended for USB-TTL")
+add("U12", "74AHC1G34", "Package_TO_SOT_SMD:SOT-23-5",
+    {"1": ("TRIG", "A"), "2": ("GND", "GND"), "3": (None, "NC"),
+     "4": ("TRIG_BUF", "Y"), "5": ("+5V", "VCC")},
+    "5 V buffer: GPIO12 net stays < 10 mm")
+add("C20", "100nF", "Capacitor_SMD:C_0805_2012Metric",
+    {"1": ("+5V", "1"), "2": ("GND", "2")}, "at U12")
 
-add("H1", "SPARE 2x5", "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical",
-    {"1": ("+3V3", "1"), "2": ("GND", "2"),
-     "3": ("EXP_B0", "GPB0"), "4": ("EXP_B1", "GPB1"),
-     "5": ("EXP_B2", "GPB2"), "6": ("EXP_B3", "GPB3"),
-     "7": ("EXP_B4", "GPB4"), "8": ("EXP_B5", "GPB5"),
-     "9": ("EXP_B6", "GPB6"), "10": ("EXP_B7", "GPB7")})
-
-add("TP1", "+5V", "Connector:TestPoint", {"1": ("+5V", "1")})
-add("TP2", "+3V3", "Connector:TestPoint", {"1": ("+3V3", "1")})
-add("TP3", "GND", "Connector:TestPoint", {"1": ("GND", "1")})
-add("TP4", "ADC", "Connector:TestPoint", {"1": ("ADC", "1")}, "0-1.0 V only")
-add("TP5", "GPIO16", "Connector:TestPoint", {"1": ("GPIO16", "1")})
-add("TP6", "GPIO13", "Connector:TestPoint", {"1": ("GPIO13", "1")})
+add("TP4", "ADC", "Connector:TestPoint", {"1": ("ADC", "1")}, "internal probe, 0-1.0 V")
+add("TP5", "GPIO16", "Connector:TestPoint", {"1": ("GPIO16", "1")}, "internal probe")
+add("TP6", "GPIO13", "Connector:TestPoint", {"1": ("GPIO13", "1")}, "internal probe")
 
 # ------------------------------------------------------------- I2C expanders
 add("U4", "MCP23017-E/SO", "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm",
@@ -196,7 +193,7 @@ add("U6", "ULN2803ADWR", "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm",
      "3": ("M2_DRV", "IN3"), "4": ("M2_DRV", "IN4"),
      "5": ("M3_DRV", "IN5"), "6": ("M3_DRV", "IN6"),
      "7": ("M4_DRV", "IN7"), "8": ("M4_DRV", "IN8"),
-     "9": ("GND", "GND"), "10": ("+12V", "COM"),
+     "9": ("GND_FIELD", "GND"), "10": ("+12V", "COM"),
      "11": ("MOT4_N", "O8"), "12": ("MOT4_N", "O7"),
      "13": ("MOT3_N", "O6"), "14": ("MOT3_N", "O5"),
      "15": ("MOT2_N", "O4"), "16": ("MOT2_N", "O3"),
@@ -208,7 +205,7 @@ add("U7", "ULN2803ADWR", "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm",
      "3": ("M6_DRV", "IN3"), "4": ("M6_DRV", "IN4"),
      "5": ("M7_DRV", "IN5"), "6": ("M7_DRV", "IN6"),
      "7": ("M8_DRV", "IN7"), "8": ("M8_DRV", "IN8"),
-     "9": ("GND", "GND"), "10": ("+12V", "COM"),
+     "9": ("GND_FIELD", "GND"), "10": ("+12V", "COM"),
      "11": ("MOT8_N", "O8"), "12": ("MOT8_N", "O7"),
      "13": ("MOT7_N", "O6"), "14": ("MOT7_N", "O5"),
      "15": ("MOT6_N", "O4"), "16": ("MOT6_N", "O3"),
@@ -224,10 +221,19 @@ add("RN6", "10k x4", "Resistor_SMD:R_Array_Concave_4x0612",
      "4": ("M8_DRV", "4"), "5": ("GND", "5"), "6": ("GND", "6"),
      "7": ("GND", "7"), "8": ("GND", "8")}, "power-up pull-down")
 
+add("RN7", "10k x4", "Resistor_SMD:R_Array_Concave_4x0612",
+    {"1": ("EXP_B0", "1"), "2": ("EXP_B1", "2"), "3": ("EXP_B2", "3"),
+     "4": ("EXP_B3", "4"), "5": ("GND", "5"), "6": ("GND", "6"),
+     "7": ("GND", "7"), "8": ("GND", "8")}, "spare I/O parked low")
+add("RN8", "10k x4", "Resistor_SMD:R_Array_Concave_4x0612",
+    {"1": ("EXP_B4", "1"), "2": ("EXP_B5", "2"), "3": ("EXP_B6", "3"),
+     "4": ("EXP_B7", "4"), "5": ("GND", "5"), "6": ("GND", "6"),
+     "7": ("GND", "7"), "8": ("GND", "8")}, "spare I/O parked low")
+
 add("C15", "100nF", "Capacitor_SMD:C_0805_2012Metric",
-    {"1": ("+12V", "1"), "2": ("GND", "2")}, "at U6 COM")
+    {"1": ("+12V", "1"), "2": ("GND_FIELD", "2")}, "at U6 COM")
 add("C16", "100nF", "Capacitor_SMD:C_0805_2012Metric",
-    {"1": ("+12V", "1"), "2": ("GND", "2")}, "at U7 COM")
+    {"1": ("+12V", "1"), "2": ("GND_FIELD", "2")}, "at U7 COM")
 
 # motor terminals J3..J10 -> motors 1..8
 for n in range(1, 9):
@@ -285,9 +291,10 @@ for blk in range(4):
         pins, "channels %d-%d" % (blk * 4 + 1, blk * 4 + 4))
 
 # ------------------------------------------------------------- ultrasonic port
-add("J27", "HC-SR04 4P 2.5mm", "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical",
-    {"1": ("+5V", "VCC"), "2": ("TRIG", "TRIG"),
-     "3": ("ECHO_RAW", "ECHO"), "4": ("GND", "GND")})
+add("J27", "UART 4P 5.00mm", "TerminalBlock:TerminalBlock_bornier-4_P5.00mm",
+    {"1": ("+3V3", "3V3 OUT"), "2": ("TXD0", "TXD"),
+     "3": ("RXD0", "RXD"), "4": ("GND", "GND")},
+    "diagnostic port; pin 1 is OUTPUT only")
 add("R27", "1k", "Resistor_SMD:R_0805_2012Metric",
     {"1": ("ECHO_RAW", "1"), "2": ("ECHO", "2")}, "divider top")
 add("R28", "2k", "Resistor_SMD:R_0805_2012Metric",

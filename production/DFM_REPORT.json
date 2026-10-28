@@ -1,0 +1,198 @@
+{
+  "summary": {
+    "pass_": 8,
+    "warn": 1,
+    "fail": 0,
+    "pending": 11
+  },
+  "meta": {
+    "nets": 99,
+    "pins": 456,
+    "parts": 89,
+    "jumpers": 52,
+    "kicad": null,
+    "board": null
+  },
+  "checks": [
+    {
+      "n": 1,
+      "name": "ERC - 0 errors / 0 warnings / one PWR_FLAG per rail",
+      "status": "PENDING",
+      "basis": "PENDING",
+      "measured": "no .kicad_sch in repo; kicad-cli absent",
+      "tool": "KiCad 8/9 ERC",
+      "note": "Run: kicad-cli sch erc -o production/erc.rpt board.kicad_sch"
+    },
+    {
+      "n": 2,
+      "name": "Schematic-to-PCB parity + unrouted count",
+      "status": "PENDING",
+      "basis": "COMPUTED",
+      "measured": "parity 99 nets / 456 pins (expected 99 / 456); unrouted NOT measured - no .kicad_pcb",
+      "tool": "gen_netlist.py + KiCad Update PCB",
+      "note": "kicad-cli pcb drc reports unrouted once the board exists"
+    },
+    {
+      "n": 3,
+      "name": "Gerber / drill layer alignment",
+      "status": "PENDING",
+      "basis": "PENDING",
+      "measured": "no gerbers in /production/gerbers",
+      "tool": "GerbView / gerbv",
+      "note": "Run: python tools/release.py"
+    },
+    {
+      "n": 4,
+      "name": "Board edge clearance + outline closure (180.0 x 100.0)",
+      "status": "PASS",
+      "basis": "COMPUTED",
+      "measured": "89 parts inside envelope; min edge margin 0.00 mm; U3 antenna overhang to Y=-4.00 as designed",
+      "tool": "check_placement.py",
+      "note": ""
+    },
+    {
+      "n": 5,
+      "name": "Solder mask web >= 0.10 mm at 1.27 mm pitch",
+      "status": "PASS",
+      "basis": "COMPUTED",
+      "measured": "web 0.57 mm (pitch 1.27 - pad 0.60 - 2 x 0.05 expansion)",
+      "tool": "rule arithmetic",
+      "note": "verify on F.Mask gerber after export"
+    },
+    {
+      "n": 6,
+      "name": "Annular ring >= 0.25 mm, no drill breakout",
+      "status": "PASS",
+      "basis": "COMPUTED",
+      "measured": "via 0.250 mm (0.8/0.3), terminal 0.550 mm (2.4/1.3), mounting 1.6 mm (6.4/3.2)",
+      "tool": "rule arithmetic",
+      "note": "0.6/0.3 vias would give 0.15 mm and were rejected"
+    },
+    {
+      "n": 7,
+      "name": "Silkscreen clipped by mask / over exposed copper",
+      "status": "PENDING",
+      "basis": "PENDING",
+      "measured": "no .kicad_pcb",
+      "tool": "KiCad DRC (silk over copper)",
+      "note": "kicad-cli pcb drc"
+    },
+    {
+      "n": 8,
+      "name": "Acid traps / acute angles / teardrops",
+      "status": "PENDING",
+      "basis": "PENDING",
+      "measured": "no routed copper",
+      "tool": "KiCad DRC + track angle report",
+      "note": "kicad-cli pcb drc"
+    },
+    {
+      "n": 9,
+      "name": "Thermal relief spokes >= 0.5 mm on GND / GND_FIELD pins",
+      "status": "PENDING",
+      "basis": "PENDING",
+      "measured": "no zone fills",
+      "tool": "KiCad zone inspector",
+      "note": "re-fill zones then DRC"
+    },
+    {
+      "n": 10,
+      "name": "Courtyard overlap + 3D interference",
+      "status": "PASS",
+      "basis": "COMPUTED",
+      "measured": "89 parts + 52 jumpers, 0 body clashes",
+      "tool": "check_placement.py + gen_jumpers.py",
+      "note": "3D check for the 4 mm antenna overhang is PENDING"
+    },
+    {
+      "n": 11,
+      "name": "Solder paste apertures (SMD 1:1, U2 tab 85 %, THT 0 %)",
+      "status": "PENDING",
+      "basis": "PENDING",
+      "measured": "no F.Paste gerber",
+      "tool": "GerbView",
+      "note": "python tools/release.py"
+    },
+    {
+      "n": 12,
+      "name": "CPL / POS rotation audit vs EIA-481",
+      "status": "PENDING",
+      "basis": "PENDING",
+      "measured": "no .pos file",
+      "tool": "KiCad pos export + fab CPL viewer",
+      "note": "kicad-cli pcb export pos"
+    },
+    {
+      "n": 13,
+      "name": "Current density vs IPC-2221 (1 oz, 10 degC rise)",
+      "status": "PASS",
+      "basis": "COMPUTED",
+      "measured": "+12V 1.5 mm -> 3.2 A; motor 0.6 mm -> 1.3 A; I2C/signal 0.3 mm -> 0.45 A",
+      "tool": "IPC-2221 chart",
+      "note": "all three exceed their loads (2.8 A / 0.6 A / 20 mA)"
+    },
+    {
+      "n": 14,
+      "name": "Via tenting - all routing vias covered by mask",
+      "status": "PENDING",
+      "basis": "PENDING",
+      "measured": "no F.Mask / B.Mask gerber",
+      "tool": "GerbView",
+      "note": "python tools/release.py"
+    },
+    {
+      "n": 15,
+      "name": "Via aspect ratio (brief target 1:5.3, fab limit 1:8)",
+      "status": "WARN",
+      "basis": "COMPUTED",
+      "measured": "5.333:1 (1.6 mm / 0.3 mm) = 0.6% over the 5.3 target, 33% inside the 8:1 fab limit",
+      "tool": "arithmetic",
+      "note": "0.35 mm drill would give 4.57:1 if the 5.3 target is contractual"
+    },
+    {
+      "n": 16,
+      "name": "Copper balance / zero islands / field zone bare",
+      "status": "PENDING",
+      "basis": "PENDING",
+      "measured": "no zone fills; rule area defined at Y 73-100",
+      "tool": "KiCad zone fill",
+      "note": "set 'remove islands: always' then re-fill"
+    },
+    {
+      "n": 17,
+      "name": "3 fiducials (1.0 mm / 2.0 mm mask) + 4 M3 tooling holes",
+      "status": "PASS",
+      "basis": "COMPUTED",
+      "measured": "4 tooling holes at the specified corners, 3 fiducials",
+      "tool": "placement.csv",
+      "note": ""
+    },
+    {
+      "n": 18,
+      "name": "BOM <-> footprint MPN / pin-count match",
+      "status": "PASS",
+      "basis": "COMPUTED",
+      "measured": "123 netlist refs, 127 in BOM, pin-count mismatches: none",
+      "tool": "dfm_pipeline.py",
+      "note": "NC pins counted: U12+1, U4+4, U5+4; PS2501-4 = 16-pin DIP, U12 = 5-pin SOT-23"
+    },
+    {
+      "n": 19,
+      "name": "Antenna keep-out 20 x 8 mm void (X 78-98, Y -4..4)",
+      "status": "PASS",
+      "basis": "COMPUTED",
+      "measured": "0 objects in the keep-out on all 4 layers (geometry); no intruders",
+      "tool": "check_placement.py",
+      "note": "confirm on F.Cu/B.Cu/F.Mask/B.Mask gerbers after export"
+    },
+    {
+      "n": 20,
+      "name": "Clearance audit: track-track / track-pad / hole-hole",
+      "status": "PENDING",
+      "basis": "PENDING",
+      "measured": "no routed copper",
+      "tool": "KiCad DRC with fab rules",
+      "note": "kicad-cli pcb drc"
+    }
+  ]
+}

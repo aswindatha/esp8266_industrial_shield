@@ -1,5 +1,7 @@
 # Part 4 — Layout, Routing and DFM Constraints
 
+> **Superseded by [`05_layout_execution_plan.md`](05_layout_execution_plan.md)** for placement, routing order, pour map, thermal numbers and the Gerber checklist. The board grew from 170 × 100 to **180 × 100 mm**, the field terminals moved to the bottom edge, and J27 moved to the top edge — see §0 of that document for the arithmetic.
+
 Target: **170 × 100 mm, 2 layer, 1.6 mm FR-4, 1 oz (35 µm) copper, HASL-LF, green LPI mask** — comfortably inside what every Indian fab (PCB Power, LionCircuits, Protoserve, Calumet, Shogini) quotes as standard.
 
 ---

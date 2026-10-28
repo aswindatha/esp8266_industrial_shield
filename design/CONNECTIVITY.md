@@ -1,9 +1,9 @@
 # Connectivity check
 
 - Parts: 123
-- Nets: 97
-- Component pins on nets: 451
-- Explicit no-connect pins: 8
+- Nets: 99
+- Component pins on nets: 456
+- Explicit no-connect pins: 9
 - Single-pin nets: 0
 
 ## Single-pin nets (must be intentional test points)
@@ -11,6 +11,7 @@
 
 ## No-connect pins
 
+- U12.3 (NC)
 - U4.11 (NC)
 - U4.14 (NC)
 - U4.19 (INTB)
