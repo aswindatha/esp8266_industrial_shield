@@ -1,0 +1,36 @@
+Item,Qty,Refs,Description,Value,Package,MPN,Manufacturer,Notes,Unit_INR,Ext_INR
+1,1,U1,150 kHz 2 A 40 V step-down converter,XL1509-5.0E1,SOP-8,XL1509-5.0E1,XLSEMI,"Fixed 5.0 V; FB pin ties to VOUT",75,75
+2,1,U2,1 A LDO regulator 3.3 V,AMS1117-3.3,SOT-223,AMS1117-3.3,AMS,"Tab = pin 2 = VOUT; needs >=10 uF output",10,10
+3,1,U3,WiFi module ESP8266 + 4 MB flash,ESP-12F,24x16 mm castellated,ESP-12F,AI-Thinker,"Antenna must overhang board edge",210,210
+4,2,U4 U5,16-bit I2C I/O expander,MCP23017-E/SO,SOIC-28W 7.5 mm,MCP23017-E/SO,Microchip,"0x20 motors / 0x21 inputs; 25 mA push-pull outputs",180,360
+5,2,U6 U7,8-channel Darlington array,ULN2803ADWR,SOIC-18W 7.5 mm,ULN2803ADWR,Texas Instruments,"2 channels paralleled per motor; COM to +12V",42,84
+6,4,U8 U9 U10 U11,Quad phototransistor optocoupler,PS2501-4,DIP-16 7.62 mm,PS2501-4,Renesas,"CONFIRM package: PS2501L-4 is the gull-wing SMD variant",58,232
+7,1,D1,400 W TVS diode 28 V standoff,SMAJ28A,SMA (DO-214AC),SMAJ28A,Littelfuse,"VC = 45.4 V exceeds XL1509 40 V abs max - see review F16",13,13
+8,2,D2 D3,3 A 40 V Schottky,SS34,SMA (DO-214AC),SS34,MDD,"D2 reverse polarity / D3 freewheel; use SS54 for margin",6,12
+9,16,D4-D19,Small-signal diode 100 V,1N4148W,SOD-123,1N4148W,Good-Ark,"Antiparallel across each opto LED",1.5,24
+10,1,L1,Shielded power inductor,33 uH 2 A,8x8x4.5 mm,SRN8040-330M,Bourns,"8D43 generic acceptable; Isat >= 2 A",26,26
+11,1,C1,Aluminium electrolytic,100 uF 50 V,6.3x7.7 SMD,UWT1H101MCL1GS,Nichicon,"Input bulk",11,11
+12,1,C4,Aluminium electrolytic,220 uF 25 V,8x10.2 SMD,EEE-FK1E221P,Panasonic,"Buck output",12,12
+13,1,C19,Aluminium electrolytic,470 uF 25 V,10x10.5 SMD,EEE-FK1E471P,Panasonic,"Motor bulk, recommended",28,28
+14,1,C9,Aluminium electrolytic,100 uF 10 V,6.3x5.4 SMD,UWT1A101MCL1GS,Nichicon,"3V3 bulk at ESP",8,8
+15,1,C7,Ceramic X5R,22 uF 16 V,1210,GRM32ER61C226K,Murata,"AMS1117 stability",7,7
+16,2,C6 C11,Ceramic X5R,10 uF 16 V,0805,GRM21BR61C106K,Murata,"",3,6
+17,1,C2,Ceramic X7R,100 nF 100 V,0805,GRM21BR72A104K,Murata,"Input HF decoupling",2,2
+18,11,C3 C5 C8 C10 C12 C13 C14 C15 C16 C17 C18,Ceramic X7R,100 nF 50 V,0805,GRM21BR71H104K,Murata,"",1,11
+19,8,R1 R2 R3 R4 R5 R6 R9 R10,Thick film 1%,10 k,0805,RC0805FR-0710KL,Yageo,"EN RST GPIO0 GPIO2 GPIO12 pull/strap + expander RST",0.5,4
+20,2,R7 R8,Thick film 1%,4.7 k,0805,RC0805FR-074K7L,Yageo,"I2C pull-ups to 3V3",0.5,1
+21,16,R11-R26,Thick film 1% 0.25 W,1.2 k,1206,RC1206FR-071K2L,Yageo,"145 mW at 14.4 V - do NOT use 0805",1,16
+22,1,R27,Thick film 1%,1 k,0805,RC0805FR-071KL,Yageo,"Echo divider top",0.5,0.5
+23,1,R28,Thick film 1%,2 k,0805,RC0805FR-072KL,Yageo,"Echo divider bottom",0.5,0.5
+24,1,R29,Thick film jumper,0 R,0805,RC0805FR-070RL,Yageo,"Isolation link +12V to FLD_12V",0.5,0.5
+25,6,RN1-RN6,Isolated resistor array 4x 10 k,10 k x4,1206 8-pin,YC164-JR-0710KL,Yageo,"RN1-4 opto pull-ups, RN5-6 ULN pull-downs",8,48
+26,24,J1 J3-J10 J11-J26,Screw terminal 2-pole 5.00 mm,2P 5.00 mm,Degson DG126-5.0-2P,Degson,"1.3 mm drill; 10 A rated",12,288
+27,1,J2,Screw terminal 4-pole 5.00 mm,4P 5.00 mm,Degson DG126-5.0-4P,Degson,"Pin 1 is 3V3 OUTPUT - label clearly",22,22
+28,1,J27,JST XH 4-pin vertical,4P 2.50 mm,B4B-XH-A,JST,"HC-SR04 / JSN-SR04T",15,15
+29,2,SW1 SW2,Tactile switch 6x6x5 mm,SPST,6x6 SMD,TS-1088-AR02016,XKB,"FLASH (GPIO0) and RESET",4,8
+30,1,H1,Pin header 2x5 2.54 mm,2x5,THT,PinHeader_2x05,generic,"Spare GPB0-7 + 3V3 + GND",10,10
+31,1,H2,Pin header 1x6 2.54 mm,1x6,THT,PinHeader_1x06,generic,"Recommended USB-TTL port",5,5
+32,1,F1,Resettable PTC fuse 4 A,4 A,1812,MF-R400,Bourns,"2.8 A continuous -> 4 A hold",22,22
+33,6,TP1-TP6,Test point pad 1.5 mm,+5V +3V3 GND ADC GPIO16 GPIO13,1.5 mm pad,bare copper,n/a,"No part to order",0,0
+34,1,-,PCB 2 layer 1.6 mm FR-4 1 oz HASL-LF,170 x 100 mm,-,n/a,"Indian fab: PCB Power / LionCircuits / Protoserve",420,420
+,,,,,,,,TOTAL (single board, ex-GST, ex-assembly),,1991.5
