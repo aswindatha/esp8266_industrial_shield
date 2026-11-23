@@ -1,5 +1,5 @@
 Drill report for ind_8ch_motor_ctrl.kicad_pcb
-Created on 2026-11-22T22:45:37
+Created on 2026-11-23T16:28:38
 
 Copper Layer Stackup:
     =============================================================
@@ -7,7 +7,7 @@ Copper Layer Stackup:
     L2 :  B.Cu                      back
 
 
-Drill file 'ind_8ch_motor_ctrl.drl' contains
+Drill file 'ind_8ch_motor_ctrl-PTH.drl' contains
     plated through holes:
     =============================================================
     T1  0.200mm  0.0079"  (12 holes))
@@ -17,9 +17,9 @@ Drill file 'ind_8ch_motor_ctrl.drl' contains
     Total plated holes count 135
 
 
-Not plated through holes are merged with plated holes
+Drill file 'ind_8ch_motor_ctrl-NPTH.drl' contains
     unplated through holes:
     =============================================================
-    T4  3.200mm  0.1260"  (4 holes))
+    T1  3.200mm  0.1260"  (4 holes))
 
     Total unplated holes count 4

@@ -1,0 +1,13 @@
+Robu Part Search - portable skill kit
+=====================================
+
+1. Double-click install.bat
+2. Wait for "[ok] Live search returned a product link"
+3. Open OpenCode or Qoder and ask:
+   "Search robu.in for LTV-356T and show price and stock"
+
+The installer sets up Python packages and copies the skill into:
+  OpenCode: %USERPROFILE%\.config\opencode\skills\robu-part-search
+  Qoder:    %USERPROFILE%\.qoder\skills\robu-part-search
+
+Read README.md for options, usage and troubleshooting.

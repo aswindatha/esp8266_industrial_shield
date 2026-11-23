@@ -1,0 +1,92 @@
+[
+ {
+  "i": 1,
+  "net": "/3V3_RAIL",
+  "status": "BLOCKED"
+ },
+ {
+  "i": 2,
+  "net": "/3V3_RAIL",
+  "status": "BLOCKED"
+ },
+ {
+  "i": 3,
+  "net": "/GND",
+  "status": "ROUTED(0seg)"
+ },
+ {
+  "i": 4,
+  "net": "/GND",
+  "status": "ROUTED(0seg)"
+ },
+ {
+  "i": 5,
+  "net": "/M3_DRV",
+  "status": "ROUTED(9seg)"
+ },
+ {
+  "i": 6,
+  "net": "/M5_DRV",
+  "status": "ROUTED(9seg)"
+ },
+ {
+  "i": 7,
+  "net": "/M6_DRV",
+  "status": "BLOCKED"
+ },
+ {
+  "i": 8,
+  "net": "/M7_DRV",
+  "status": "BLOCKED"
+ },
+ {
+  "i": 9,
+  "net": "/I2C_SCL",
+  "status": "BLOCKED"
+ },
+ {
+  "i": 10,
+  "net": "/I2C_SDA",
+  "status": "BLOCKED"
+ },
+ {
+  "i": 11,
+  "net": "/UART_TX",
+  "status": "BLOCKED"
+ },
+ {
+  "i": 12,
+  "net": "/UART_RX",
+  "status": "BLOCKED"
+ },
+ {
+  "i": 13,
+  "net": "/SENS1_COL",
+  "status": "BLOCKED"
+ },
+ {
+  "i": 14,
+  "net": "/SENS3_COL",
+  "status": "BLOCKED"
+ },
+ {
+  "i": 15,
+  "net": "/SENS4_COL",
+  "status": "BLOCKED"
+ },
+ {
+  "i": 16,
+  "net": "/M1_GPIO",
+  "status": "BLOCKED"
+ },
+ {
+  "i": 17,
+  "net": "/SENS2_A",
+  "status": "BLOCKED"
+ },
+ {
+  "i": 18,
+  "net": "/SENS1_A",
+  "status": "BLOCKED"
+ }
+]

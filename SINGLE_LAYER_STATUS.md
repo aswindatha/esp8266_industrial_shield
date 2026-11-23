@@ -1,8 +1,15 @@
 # Single-Layer Conversion — Status & Plan
 
+> **RESOLVED 2026-11-23:** The single-layer experiment could not be made
+> DRC-clean (18 unrouted / topological pin-order reversal / KiCad cannot treat
+> 0 Ω jumpers as connected). The main board `ind_8ch_motor_ctrl.kicad_pcb`
+> has been restored to the fully-routed **2-layer** design with **0 DRC and 0
+> ERC violations** — see `FINAL_VERIFICATION.md`. The single-layer board is
+> preserved as `ind_8ch_motor_ctrl_SINGLELAYER_WIP.kicad_pcb`.
+
 **Date:** 2026-11-23  
 **2-layer design:** preserved in `ind_8ch_motor_ctrl_2LAYER_backup.zip` and `backup_2layer/`  
-**Working board:** `ind_8ch_motor_ctrl.kicad_pcb` — now **single-layer** (F.Cu only)
+**Working board:** `ind_8ch_motor_ctrl.kicad_pcb` — restored to **2-layer** production design (was single-layer during the experiment)
 
 ---
 
