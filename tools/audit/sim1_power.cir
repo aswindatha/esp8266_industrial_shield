@@ -1,0 +1,26 @@
+* SIM1: 12V power-up, buck 5V load step, LDO 3.3V under 400 mA ESP32 burst
+VIN vin 0 PULSE(0 12 0 1m 1m 20 40)
+D1 vin prot DSS34
+RB1 prot p2 0.05
+CB1 p2 0 220u
+VCTRL ctrl 0 PULSE(0 1 1m 1m 1m 20 40)
+S1 drv drv2 ctrl 0 SMOD
+EBUCK drv 0 VALUE={min(max(5+20*(5-V(five)),0),12)}
+L1 drv2 f5 33u
+RESR f5 five 0.05
+CB2 five 0 220u
+RLOAD five 0 20
+ILOAD five 0 PULSE(0 0.4 0.2 1m 1m 2 4)
+ELDO ldo 0 VALUE={min(V(five),3.3)}
+RPASS ldo three3 0.2
+C3 three3 0 10u
+R3LOAD three3 0 100
+I3LOAD three3 0 PULSE(0 0.4 0.2 1m 1m 2 4)
+.model DSS34 D(IS=1e-9 RS=0.02 N=1.2 VJ=0.5 CJO=100p)
+.model SMOD SW(RON=0.01 ROFF=1e6 VTH=0.5 VHYST=0.1)
+.tran 2m 1
+.control
+run
+wrdata C:/Users/aswin/Music/PCB/ep/tools/audit/sim1_out.txt V(vin) V(prot) V(five) V(three3)
+.endc
+.end

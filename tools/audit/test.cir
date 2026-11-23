@@ -1,0 +1,10 @@
+* simple RC test
+V1 in 0 DC 0 PULSE(0 10 0 1u 1u 100m 200m)
+R1 in out 10k
+C1 out 0 10u
+.tran 10m 1
+.control
+run
+wrdata C:/Users/aswin/Music/PCB/ep/tools/audit/test_out.txt out
+.endc
+.end

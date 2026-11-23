@@ -1,0 +1,4415 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-23T08:32:39",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "ind_8ch_motor_ctrl.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/3V3_RAIL] on F.Cu, length 4.0000 mm",
+                    "pos": {
+                        "x": 20.55,
+                        "y": 82.0
+                    },
+                    "uuid": "8e06541f-0190-460c-ad53-4567cfbb1bb8"
+                },
+                {
+                    "description": "Track [/3V3_RAIL] on F.Cu, length 2.4510 mm",
+                    "pos": {
+                        "x": 16.7723,
+                        "y": 88.6733
+                    },
+                    "uuid": "998e6dc3-4626-4c9a-b045-7ae74e1904b0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/3V3_RAIL] of JMP01 on F.Cu",
+                    "pos": {
+                        "x": 23.765244,
+                        "y": 84.895353
+                    },
+                    "uuid": "4064ea5c-e43f-4013-a785-fdbcda8f490a"
+                },
+                {
+                    "description": "Pad 1 [/3V3_RAIL] of JMP01 on F.Cu",
+                    "pos": {
+                        "x": 21.234756,
+                        "y": 83.104647
+                    },
+                    "uuid": "b2e5898e-42e2-4c23-9e37-c9a7cf0dcaf9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/3V3_RAIL] on F.Cu, length 2.2394 mm",
+                    "pos": {
+                        "x": 65.65,
+                        "y": 41.27
+                    },
+                    "uuid": "2aba3c1a-d7d2-49e5-bc0a-46f4db9e96b4"
+                },
+                {
+                    "description": "Pad 1 [/3V3_RAIL] of JMP02 on F.Cu",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 44.95
+                    },
+                    "uuid": "fadac891-78f0-4e7c-875a-cf711c0fcf2d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/3V3_RAIL] of JMP02 on F.Cu",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 48.05
+                    },
+                    "uuid": "740307f3-c13f-4d1c-8954-1feefc3e2dcd"
+                },
+                {
+                    "description": "Track [/3V3_RAIL] on F.Cu, length 2.2312 mm",
+                    "pos": {
+                        "x": 65.65,
+                        "y": 48.19
+                    },
+                    "uuid": "1eaa002c-6b80-4ed5-9aed-410bb606bb65"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/3V3_RAIL] of JMP02 on F.Cu",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 48.05
+                    },
+                    "uuid": "740307f3-c13f-4d1c-8954-1feefc3e2dcd"
+                },
+                {
+                    "description": "Pad 1 [/3V3_RAIL] of JMP02 on F.Cu",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 44.95
+                    },
+                    "uuid": "fadac891-78f0-4e7c-875a-cf711c0fcf2d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/GND] of JMP03 on F.Cu",
+                    "pos": {
+                        "x": 26.441176,
+                        "y": 13.445758
+                    },
+                    "uuid": "e79c6ba0-afc4-4b3a-ac2e-caedd97aa129"
+                },
+                {
+                    "description": "Pad 1 [/GND] of JMP03 on F.Cu",
+                    "pos": {
+                        "x": 27.558824,
+                        "y": 10.554242
+                    },
+                    "uuid": "34a6137a-615b-46de-a415-378cb3eed527"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/GND] of JMP03 on F.Cu",
+                    "pos": {
+                        "x": 26.441176,
+                        "y": 13.445758
+                    },
+                    "uuid": "e79c6ba0-afc4-4b3a-ac2e-caedd97aa129"
+                },
+                {
+                    "description": "Track [/GND] on F.Cu, length 2.6324 mm",
+                    "pos": {
+                        "x": 29.475,
+                        "y": 14.095
+                    },
+                    "uuid": "d0c3ac04-acdd-430c-b62a-6350107bd6cf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/GND] of JMP03 on F.Cu",
+                    "pos": {
+                        "x": 27.558824,
+                        "y": 10.554242
+                    },
+                    "uuid": "34a6137a-615b-46de-a415-378cb3eed527"
+                },
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.2262 mm",
+                    "pos": {
+                        "x": 29.7,
+                        "y": 8.0
+                    },
+                    "uuid": "1275e38c-ef69-46f0-b214-681720a50e94"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/GND] of JMP04 on F.Cu",
+                    "pos": {
+                        "x": 40.193972,
+                        "y": 70.519489
+                    },
+                    "uuid": "05406e17-309a-44f9-9df7-c85f3f044a4e"
+                },
+                {
+                    "description": "Pad 1 [/GND] of JMP04 on F.Cu",
+                    "pos": {
+                        "x": 40.806028,
+                        "y": 67.480511
+                    },
+                    "uuid": "1e5915cd-1a99-4ee7-acf7-bd1ef81c4328"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 4.9483 mm",
+                    "pos": {
+                        "x": 40.285,
+                        "y": 57.5517
+                    },
+                    "uuid": "b1d96135-0fdd-407a-a018-080adfa9c969"
+                },
+                {
+                    "description": "Pad 1 [/GND] of JMP04 on F.Cu",
+                    "pos": {
+                        "x": 40.806028,
+                        "y": 67.480511
+                    },
+                    "uuid": "1e5915cd-1a99-4ee7-acf7-bd1ef81c4328"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 3.5857 mm",
+                    "pos": {
+                        "x": 45.65,
+                        "y": 84.19
+                    },
+                    "uuid": "5c80fd47-364a-4fa8-b7cb-5c24846b1cd1"
+                },
+                {
+                    "description": "Pad 2 [/GND] of JMP04 on F.Cu",
+                    "pos": {
+                        "x": 40.193972,
+                        "y": 70.519489
+                    },
+                    "uuid": "05406e17-309a-44f9-9df7-c85f3f044a4e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/GND] of JMP05 on F.Cu",
+                    "pos": {
+                        "x": 69.693057,
+                        "y": 55.323383
+                    },
+                    "uuid": "c8fabda1-a097-440d-a083-5594617bdef5"
+                },
+                {
+                    "description": "Pad 9 [/GND] of U_DRV1 on F.Cu",
+                    "pos": {
+                        "x": 77.35,
+                        "y": 63.08
+                    },
+                    "uuid": "f06a0719-3504-4b8c-bd4e-2338692768e3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/GND] of JMP05 on F.Cu",
+                    "pos": {
+                        "x": 71.306943,
+                        "y": 52.676617
+                    },
+                    "uuid": "c5e305cd-c32a-4d47-beb4-66e33f0b5261"
+                },
+                {
+                    "description": "Pad 2 [/GND] of JMP05 on F.Cu",
+                    "pos": {
+                        "x": 69.693057,
+                        "y": 55.323383
+                    },
+                    "uuid": "c8fabda1-a097-440d-a083-5594617bdef5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/GND] of JMP05 on F.Cu",
+                    "pos": {
+                        "x": 71.306943,
+                        "y": 52.676617
+                    },
+                    "uuid": "c5e305cd-c32a-4d47-beb4-66e33f0b5261"
+                },
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.7543 mm",
+                    "pos": {
+                        "x": 67.8417,
+                        "y": 44.2115
+                    },
+                    "uuid": "a0e5add4-8ac4-4757-a6a3-abdf18180d52"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 7 [/M3_DRV] of U2 on F.Cu",
+                    "pos": {
+                        "x": 74.35,
+                        "y": 50.73
+                    },
+                    "uuid": "8d643b00-0824-4245-a75d-c46f039565c3"
+                },
+                {
+                    "description": "Pad 3 [/M3_DRV] of U_DRV1 on F.Cu",
+                    "pos": {
+                        "x": 77.35,
+                        "y": 55.46
+                    },
+                    "uuid": "c37b0ed9-5221-4487-97f2-c8d4386b4cd9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [/M3_DRV] of U_DRV1 on F.Cu",
+                    "pos": {
+                        "x": 77.35,
+                        "y": 55.46
+                    },
+                    "uuid": "c37b0ed9-5221-4487-97f2-c8d4386b4cd9"
+                },
+                {
+                    "description": "Pad 1 [/M3_DRV] of JMP06 on F.Cu",
+                    "pos": {
+                        "x": 80.169814,
+                        "y": 53.808927
+                    },
+                    "uuid": "47478a10-ef1b-461f-808c-1b3672e0fd50"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/M3_DRV] of JMP06 on F.Cu",
+                    "pos": {
+                        "x": 80.169814,
+                        "y": 53.808927
+                    },
+                    "uuid": "47478a10-ef1b-461f-808c-1b3672e0fd50"
+                },
+                {
+                    "description": "Pad 2 [/M3_DRV] of JMP06 on F.Cu",
+                    "pos": {
+                        "x": 81.830186,
+                        "y": 51.191073
+                    },
+                    "uuid": "7420ee30-1bee-4588-8628-655d5886dc1c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/SENS3_COL] of JMP15 on F.Cu",
+                    "pos": {
+                        "x": 40.250489,
+                        "y": 76.529786
+                    },
+                    "uuid": "527a8dc0-39dd-4bcc-a804-927b71076976"
+                },
+                {
+                    "description": "Track [/SENS3_COL] on F.Cu, length 2.1381 mm",
+                    "pos": {
+                        "x": 44.1381,
+                        "y": 93.3219
+                    },
+                    "uuid": "53d498af-a71e-4921-a9b5-62607885b418"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/SENS3_COL] of JMP15 on F.Cu",
+                    "pos": {
+                        "x": 40.749511,
+                        "y": 73.470214
+                    },
+                    "uuid": "a5bcaf65-d09a-4844-84d2-9cf3ecc64923"
+                },
+                {
+                    "description": "Pad 2 [/SENS3_COL] of JMP15 on F.Cu",
+                    "pos": {
+                        "x": 40.250489,
+                        "y": 76.529786
+                    },
+                    "uuid": "527a8dc0-39dd-4bcc-a804-927b71076976"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/SENS3_COL] of JMP15 on F.Cu",
+                    "pos": {
+                        "x": 40.749511,
+                        "y": 73.470214
+                    },
+                    "uuid": "a5bcaf65-d09a-4844-84d2-9cf3ecc64923"
+                },
+                {
+                    "description": "Pad 6 [/SENS3_COL] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 37.25,
+                        "y": 51.09
+                    },
+                    "uuid": "98890a2c-4d69-4f9a-b50a-37af848d4967"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/SENS4_COL] of R18 on F.Cu",
+                    "pos": {
+                        "x": 26.45,
+                        "y": 98.0
+                    },
+                    "uuid": "f8b67c54-e82d-4fe4-8cda-1de63f867739"
+                },
+                {
+                    "description": "Pad 1 [/SENS4_COL] of JMP16 on F.Cu",
+                    "pos": {
+                        "x": 33.163269,
+                        "y": 95.215367
+                    },
+                    "uuid": "0f8f3871-568a-4829-b878-bd3e6c6d40c4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/SENS4_COL] of JMP16 on F.Cu",
+                    "pos": {
+                        "x": 35.836731,
+                        "y": 96.784633
+                    },
+                    "uuid": "1732a8fa-a3f6-4f95-94e7-e9b15d96fa39"
+                },
+                {
+                    "description": "Pad 1 [/SENS4_COL] of JMP16 on F.Cu",
+                    "pos": {
+                        "x": 33.163269,
+                        "y": 95.215367
+                    },
+                    "uuid": "0f8f3871-568a-4829-b878-bd3e6c6d40c4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/SENS4_COL] of JMP16 on F.Cu",
+                    "pos": {
+                        "x": 35.836731,
+                        "y": 96.784633
+                    },
+                    "uuid": "1732a8fa-a3f6-4f95-94e7-e9b15d96fa39"
+                },
+                {
+                    "description": "Track [/SENS4_COL] on F.Cu, length 9.1242 mm",
+                    "pos": {
+                        "x": 52.1018,
+                        "y": 93.1818
+                    },
+                    "uuid": "1b3bc875-83dc-4311-9c75-241d83444e34"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 5 [/M5_DRV] of U_DRV1 on F.Cu",
+                    "pos": {
+                        "x": 77.35,
+                        "y": 58.0
+                    },
+                    "uuid": "4fe604c2-b37e-4fe8-994e-12ae6ada2fdf"
+                },
+                {
+                    "description": "Pad 7 [/M5_DRV] of U3 on F.Cu",
+                    "pos": {
+                        "x": 74.35,
+                        "y": 62.73
+                    },
+                    "uuid": "aa396bd2-c9e3-4453-9542-2890e29cd9ed"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/M5_DRV] of JMP07 on F.Cu",
+                    "pos": {
+                        "x": 80.169814,
+                        "y": 58.691073
+                    },
+                    "uuid": "9a39d092-4943-4d99-9f4d-f51c2e27002c"
+                },
+                {
+                    "description": "Pad 5 [/M5_DRV] of U_DRV1 on F.Cu",
+                    "pos": {
+                        "x": 77.35,
+                        "y": 58.0
+                    },
+                    "uuid": "4fe604c2-b37e-4fe8-994e-12ae6ada2fdf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/M5_DRV] of JMP07 on F.Cu",
+                    "pos": {
+                        "x": 81.830186,
+                        "y": 61.308927
+                    },
+                    "uuid": "6b5ea961-991a-464f-9381-b075a87c90ad"
+                },
+                {
+                    "description": "Pad 1 [/M5_DRV] of JMP07 on F.Cu",
+                    "pos": {
+                        "x": 80.169814,
+                        "y": 58.691073
+                    },
+                    "uuid": "9a39d092-4943-4d99-9f4d-f51c2e27002c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 5 [/M6_DRV] of U3 on F.Cu",
+                    "pos": {
+                        "x": 74.35,
+                        "y": 67.81
+                    },
+                    "uuid": "fc388100-a1e3-4c01-8117-2ac29485b1c3"
+                },
+                {
+                    "description": "Pad 2 [/M6_DRV] of JMP08 on F.Cu",
+                    "pos": {
+                        "x": 81.513721,
+                        "y": 64.462392
+                    },
+                    "uuid": "b76d9722-b323-46bd-918a-95f95152839f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/M6_DRV] of JMP08 on F.Cu",
+                    "pos": {
+                        "x": 80.486279,
+                        "y": 61.537608
+                    },
+                    "uuid": "69a7fc35-029d-4a31-b788-83a58887a436"
+                },
+                {
+                    "description": "Pad 6 [/M6_DRV] of U_DRV1 on F.Cu",
+                    "pos": {
+                        "x": 77.35,
+                        "y": 59.27
+                    },
+                    "uuid": "f45a1554-ae3b-42ec-84e3-ee13c0139da6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/M6_DRV] of JMP08 on F.Cu",
+                    "pos": {
+                        "x": 81.513721,
+                        "y": 64.462392
+                    },
+                    "uuid": "b76d9722-b323-46bd-918a-95f95152839f"
+                },
+                {
+                    "description": "Pad 1 [/M6_DRV] of JMP08 on F.Cu",
+                    "pos": {
+                        "x": 80.486279,
+                        "y": 61.537608
+                    },
+                    "uuid": "69a7fc35-029d-4a31-b788-83a58887a436"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 7 [/M7_DRV] of U4 on F.Cu",
+                    "pos": {
+                        "x": 74.35,
+                        "y": 74.73
+                    },
+                    "uuid": "76f531c3-8149-4274-8544-871ce0fb3473"
+                },
+                {
+                    "description": "Pad 2 [/M7_DRV] of JMP09 on F.Cu",
+                    "pos": {
+                        "x": 81.320609,
+                        "y": 69.016479
+                    },
+                    "uuid": "dea9ee9c-6bab-4448-b845-d792d3197de9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/M7_DRV] of JMP09 on F.Cu",
+                    "pos": {
+                        "x": 80.679391,
+                        "y": 65.983521
+                    },
+                    "uuid": "73728208-2200-44b5-91c2-b9c3b22f1139"
+                },
+                {
+                    "description": "Pad 7 [/M7_DRV] of U_DRV1 on F.Cu",
+                    "pos": {
+                        "x": 77.35,
+                        "y": 60.54
+                    },
+                    "uuid": "f1b68a77-b03b-43f3-a3a2-fc257906d999"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/M7_DRV] of JMP09 on F.Cu",
+                    "pos": {
+                        "x": 81.320609,
+                        "y": 69.016479
+                    },
+                    "uuid": "dea9ee9c-6bab-4448-b845-d792d3197de9"
+                },
+                {
+                    "description": "Pad 1 [/M7_DRV] of JMP09 on F.Cu",
+                    "pos": {
+                        "x": 80.679391,
+                        "y": 65.983521
+                    },
+                    "uuid": "73728208-2200-44b5-91c2-b9c3b22f1139"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/I2C_SCL] of JMP10 on F.Cu",
+                    "pos": {
+                        "x": 32.955783,
+                        "y": 49.366236
+                    },
+                    "uuid": "573ad9fe-69a4-4966-90b0-ff13b580800b"
+                },
+                {
+                    "description": "Track [/I2C_SCL] on F.Cu, length 10.7921 mm",
+                    "pos": {
+                        "x": 18.5467,
+                        "y": 52.0967
+                    },
+                    "uuid": "7c1e7a89-aa62-47b8-b9f6-e359b82235cb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/I2C_SCL] of JMP10 on F.Cu",
+                    "pos": {
+                        "x": 36.044217,
+                        "y": 49.633764
+                    },
+                    "uuid": "cf105092-cc41-4502-9be7-9edc9aaaa87f"
+                },
+                {
+                    "description": "Pad 1 [/I2C_SCL] of JMP10 on F.Cu",
+                    "pos": {
+                        "x": 32.955783,
+                        "y": 49.366236
+                    },
+                    "uuid": "573ad9fe-69a4-4966-90b0-ff13b580800b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/I2C_SCL] of JMP10 on F.Cu",
+                    "pos": {
+                        "x": 36.044217,
+                        "y": 49.633764
+                    },
+                    "uuid": "cf105092-cc41-4502-9be7-9edc9aaaa87f"
+                },
+                {
+                    "description": "Pad 36 [/I2C_SCL] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 54.75,
+                        "y": 47.28
+                    },
+                    "uuid": "cbe9901b-61ac-44a7-bd5c-1dfb116850d7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/I2C_SDA] on F.Cu, length 2.8991 mm",
+                    "pos": {
+                        "x": 14.95,
+                        "y": 42.5
+                    },
+                    "uuid": "f28caeac-bb18-4f06-8dd3-39b840c89b5c"
+                },
+                {
+                    "description": "Pad 1 [/I2C_SDA] of JMP11 on F.Cu",
+                    "pos": {
+                        "x": 32.984887,
+                        "y": 49.827006
+                    },
+                    "uuid": "b8eb56f5-0736-410a-8ff9-227e102c549f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/I2C_SDA] of JMP11 on F.Cu",
+                    "pos": {
+                        "x": 32.984887,
+                        "y": 49.827006
+                    },
+                    "uuid": "b8eb56f5-0736-410a-8ff9-227e102c549f"
+                },
+                {
+                    "description": "Pad 2 [/I2C_SDA] of JMP11 on F.Cu",
+                    "pos": {
+                        "x": 36.015113,
+                        "y": 49.172994
+                    },
+                    "uuid": "3afef057-fe98-4d97-b421-0b3c8f59f11c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 33 [/I2C_SDA] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 54.75,
+                        "y": 51.09
+                    },
+                    "uuid": "c2493289-1fe5-4be4-b830-f7937fcfcd10"
+                },
+                {
+                    "description": "Pad 2 [/I2C_SDA] of JMP11 on F.Cu",
+                    "pos": {
+                        "x": 36.015113,
+                        "y": 49.172994
+                    },
+                    "uuid": "3afef057-fe98-4d97-b421-0b3c8f59f11c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 11 [/UART_TX] of J_IN",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 52.5
+                    },
+                    "uuid": "1c5dec8b-57ea-476e-8266-fbcec82fc9ae"
+                },
+                {
+                    "description": "Pad 1 [/UART_TX] of JMP12 on F.Cu",
+                    "pos": {
+                        "x": 28.455063,
+                        "y": 50.87482
+                    },
+                    "uuid": "bfc76317-f77a-4122-b630-1029b3a90085"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/UART_TX] of JMP12 on F.Cu",
+                    "pos": {
+                        "x": 28.455063,
+                        "y": 50.87482
+                    },
+                    "uuid": "bfc76317-f77a-4122-b630-1029b3a90085"
+                },
+                {
+                    "description": "Pad 2 [/UART_TX] of JMP12 on F.Cu",
+                    "pos": {
+                        "x": 31.544937,
+                        "y": 51.12518
+                    },
+                    "uuid": "771d66e2-3ffd-4c96-bbd3-dfa5b5d92425"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/UART_TX] of JMP12 on F.Cu",
+                    "pos": {
+                        "x": 31.544937,
+                        "y": 51.12518
+                    },
+                    "uuid": "771d66e2-3ffd-4c96-bbd3-dfa5b5d92425"
+                },
+                {
+                    "description": "Pad 35 [/UART_TX] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 54.75,
+                        "y": 48.55
+                    },
+                    "uuid": "deab90be-89d2-4101-b767-245a7adeaf99"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/UART_RX] of JMP13 on F.Cu",
+                    "pos": {
+                        "x": 28.468883,
+                        "y": 53.75879
+                    },
+                    "uuid": "7213cdb0-f490-4f9f-b9cb-af15f21f7538"
+                },
+                {
+                    "description": "Pad 2 [/UART_RX] of JMP13 on F.Cu",
+                    "pos": {
+                        "x": 31.531117,
+                        "y": 54.24121
+                    },
+                    "uuid": "ea2a82b2-c1f0-461e-b8a3-ff71e12804d0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/UART_RX] of JMP13 on F.Cu",
+                    "pos": {
+                        "x": 28.468883,
+                        "y": 53.75879
+                    },
+                    "uuid": "7213cdb0-f490-4f9f-b9cb-af15f21f7538"
+                },
+                {
+                    "description": "PTH pad 12 [/UART_RX] of J_IN",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 57.5
+                    },
+                    "uuid": "266d6e1b-a5c0-4569-8545-a98682724cb3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/UART_RX] of JMP13 on F.Cu",
+                    "pos": {
+                        "x": 31.531117,
+                        "y": 54.24121
+                    },
+                    "uuid": "ea2a82b2-c1f0-461e-b8a3-ff71e12804d0"
+                },
+                {
+                    "description": "Pad 34 [/UART_RX] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 54.75,
+                        "y": 49.82
+                    },
+                    "uuid": "6a9cd8a1-9097-4795-a4d0-a210a3e60f09"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/SENS1_COL] of JMP14 on F.Cu",
+                    "pos": {
+                        "x": 26.103514,
+                        "y": 67.735558
+                    },
+                    "uuid": "fc06f1e5-0ddc-4947-9988-48d62e97bb22"
+                },
+                {
+                    "description": "Pad 1 [/SENS1_COL] of JMP14 on F.Cu",
+                    "pos": {
+                        "x": 27.896486,
+                        "y": 70.264442
+                    },
+                    "uuid": "e36da852-c76f-4089-baf8-a28f2eafcc9f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/SENS1_COL] of JMP14 on F.Cu",
+                    "pos": {
+                        "x": 27.896486,
+                        "y": 70.264442
+                    },
+                    "uuid": "e36da852-c76f-4089-baf8-a28f2eafcc9f"
+                },
+                {
+                    "description": "Track [/SENS1_COL] on F.Cu, length 1.5272 mm",
+                    "pos": {
+                        "x": 16.3701,
+                        "y": 83.0799
+                    },
+                    "uuid": "7aaf1cf5-f10e-4ec5-9f1d-a54b26188253"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 8 [/SENS1_COL] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 37.25,
+                        "y": 53.63
+                    },
+                    "uuid": "72b92090-506d-437e-b981-e01a6a987e94"
+                },
+                {
+                    "description": "Pad 2 [/SENS1_COL] of JMP14 on F.Cu",
+                    "pos": {
+                        "x": 26.103514,
+                        "y": 67.735558
+                    },
+                    "uuid": "fc06f1e5-0ddc-4947-9988-48d62e97bb22"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/M1_GPIO] of JMP17 on F.Cu",
+                    "pos": {
+                        "x": 49.720063,
+                        "y": 51.625779
+                    },
+                    "uuid": "d9c4097f-7d3e-4ba7-8039-8de56d66e727"
+                },
+                {
+                    "description": "Pad 2 [/M1_GPIO] of JMP17 on F.Cu",
+                    "pos": {
+                        "x": 52.279937,
+                        "y": 53.374221
+                    },
+                    "uuid": "eee6edcb-656c-4674-b477-a83a99e03f59"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/M1_GPIO] of JMP17 on F.Cu",
+                    "pos": {
+                        "x": 49.720063,
+                        "y": 51.625779
+                    },
+                    "uuid": "d9c4097f-7d3e-4ba7-8039-8de56d66e727"
+                },
+                {
+                    "description": "Pad 13 [/M1_GPIO] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 37.25,
+                        "y": 59.98
+                    },
+                    "uuid": "4f6c9008-39be-4a3b-aa48-a747ab10aa54"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/M1_GPIO] of JMP17 on F.Cu",
+                    "pos": {
+                        "x": 52.279937,
+                        "y": 53.374221
+                    },
+                    "uuid": "eee6edcb-656c-4674-b477-a83a99e03f59"
+                },
+                {
+                    "description": "Pad 1 [/M1_GPIO] of R2 on F.Cu",
+                    "pos": {
+                        "x": 58.45,
+                        "y": 45.5
+                    },
+                    "uuid": "b8137b9f-8508-4b83-8cf0-a6028ec9a5f7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/SENS2_A] of JMP18 on F.Cu",
+                    "pos": {
+                        "x": 26.111609,
+                        "y": 76.270142
+                    },
+                    "uuid": "898b8907-860d-4093-828f-a88f0a601acc"
+                },
+                {
+                    "description": "Pad 2 [/SENS2_A] of JMP18 on F.Cu",
+                    "pos": {
+                        "x": 27.888391,
+                        "y": 73.729858
+                    },
+                    "uuid": "55422bfd-d170-4f6d-8423-2e3803a650a7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/SENS2_A] of JMP18 on F.Cu",
+                    "pos": {
+                        "x": 26.111609,
+                        "y": 76.270142
+                    },
+                    "uuid": "898b8907-860d-4093-828f-a88f0a601acc"
+                },
+                {
+                    "description": "Pad 3 [/SENS2_A] of U5 on F.Cu",
+                    "pos": {
+                        "x": 34.35,
+                        "y": 86.73
+                    },
+                    "uuid": "01545185-0bc5-4a52-80cf-fe85b8c24b33"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/SENS2_A] of JMP18 on F.Cu",
+                    "pos": {
+                        "x": 27.888391,
+                        "y": 73.729858
+                    },
+                    "uuid": "55422bfd-d170-4f6d-8423-2e3803a650a7"
+                },
+                {
+                    "description": "Pad 2 [/SENS2_A] of R10 on F.Cu",
+                    "pos": {
+                        "x": 20.55,
+                        "y": 67.0
+                    },
+                    "uuid": "902c9eb3-5e9d-44c2-80db-7c0f2aa4c33b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/SENS1_A] of JMP19 on F.Cu",
+                    "pos": {
+                        "x": 26.348844,
+                        "y": 76.40659
+                    },
+                    "uuid": "e6219263-8828-4fc8-a4c3-5aa08f7b8f60"
+                },
+                {
+                    "description": "Pad 2 [/SENS1_A] of JMP19 on F.Cu",
+                    "pos": {
+                        "x": 27.651156,
+                        "y": 73.59341
+                    },
+                    "uuid": "2cc481c7-3abe-46f1-9d63-69f48dae2613"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/SENS1_A] of JMP19 on F.Cu",
+                    "pos": {
+                        "x": 26.348844,
+                        "y": 76.40659
+                    },
+                    "uuid": "e6219263-8828-4fc8-a4c3-5aa08f7b8f60"
+                },
+                {
+                    "description": "Pad 1 [/SENS1_A] of U5 on F.Cu",
+                    "pos": {
+                        "x": 34.35,
+                        "y": 91.81
+                    },
+                    "uuid": "3a776d69-ff20-49de-bdb0-249642266055"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/SENS1_A] of JMP19 on F.Cu",
+                    "pos": {
+                        "x": 27.651156,
+                        "y": 73.59341
+                    },
+                    "uuid": "2cc481c7-3abe-46f1-9d63-69f48dae2613"
+                },
+                {
+                    "description": "Pad 2 [/SENS1_A] of R9 on F.Cu",
+                    "pos": {
+                        "x": 20.55,
+                        "y": 62.0
+                    },
+                    "uuid": "c1cb08d7-b2a3-4d92-ac81-12fe2564a495"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.0489 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/SENS4_COL] of JMP16 on F.Cu",
+                    "pos": {
+                        "x": 35.836731,
+                        "y": 96.784633
+                    },
+                    "uuid": "1732a8fa-a3f6-4f95-94e7-e9b15d96fa39"
+                },
+                {
+                    "description": "Track [/3V3_RAIL] on F.Cu, length 22.0427 mm",
+                    "pos": {
+                        "x": 51.5927,
+                        "y": 98.0
+                    },
+                    "uuid": "54952ae7-fe2b-4a7d-9aa3-a40bd4e8dbe8"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.0379 mm)",
+            "items": [
+                {
+                    "description": "Track [/12V_PROT] on F.Cu, length 3.1000 mm",
+                    "pos": {
+                        "x": 83.55,
+                        "y": 70.0
+                    },
+                    "uuid": "0c94aab5-93a9-49f9-af9d-cb13fcbc49ec"
+                },
+                {
+                    "description": "Pad 2 [/M7_DRV] of JMP09 on F.Cu",
+                    "pos": {
+                        "x": 81.320609,
+                        "y": 69.016479
+                    },
+                    "uuid": "dea9ee9c-6bab-4448-b845-d792d3197de9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.0945 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/M3_DRV] of JMP06 on F.Cu",
+                    "pos": {
+                        "x": 81.830186,
+                        "y": 51.191073
+                    },
+                    "uuid": "7420ee30-1bee-4588-8628-655d5886dc1c"
+                },
+                {
+                    "description": "Track [/12V_PROT] on F.Cu, length 12.5241 mm",
+                    "pos": {
+                        "x": 83.0917,
+                        "y": 62.5358
+                    },
+                    "uuid": "bb776418-f46b-46f7-9ffb-22926a9b8077"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.1504 mm)",
+            "items": [
+                {
+                    "description": "Track [/12V_PROT] on F.Cu, length 5.1525 mm",
+                    "pos": {
+                        "x": 80.45,
+                        "y": 70.0
+                    },
+                    "uuid": "db0c0b2e-a9af-4bf6-90bd-b81fbb2f4d91"
+                },
+                {
+                    "description": "Pad 2 [/M7_DRV] of JMP09 on F.Cu",
+                    "pos": {
+                        "x": 81.320609,
+                        "y": 69.016479
+                    },
+                    "uuid": "dea9ee9c-6bab-4448-b845-d792d3197de9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2067 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 8.4361 mm",
+                    "pos": {
+                        "x": 67.8417,
+                        "y": 35.7754
+                    },
+                    "uuid": "7015495b-11fe-46df-ab77-ad23492f1bec"
+                },
+                {
+                    "description": "Pad 1 [/3V3_RAIL] of JMP02 on F.Cu",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 44.95
+                    },
+                    "uuid": "fadac891-78f0-4e7c-875a-cf711c0fcf2d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2067 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.7543 mm",
+                    "pos": {
+                        "x": 67.8417,
+                        "y": 44.2115
+                    },
+                    "uuid": "a0e5add4-8ac4-4757-a6a3-abdf18180d52"
+                },
+                {
+                    "description": "Pad 1 [/3V3_RAIL] of JMP02 on F.Cu",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 44.95
+                    },
+                    "uuid": "fadac891-78f0-4e7c-875a-cf711c0fcf2d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.1554 mm)",
+            "items": [
+                {
+                    "description": "Track [/M5_GPIO] on F.Cu, length 21.0453 mm",
+                    "pos": {
+                        "x": 38.7254,
+                        "y": 63.6187
+                    },
+                    "uuid": "152108ef-eed9-4d00-b3c2-4a30792b1dc9"
+                },
+                {
+                    "description": "Pad 1 [/GND] of JMP04 on F.Cu",
+                    "pos": {
+                        "x": 40.806028,
+                        "y": 67.480511
+                    },
+                    "uuid": "1e5915cd-1a99-4ee7-acf7-bd1ef81c4328"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /SENS3_COL and /SENS4_A)",
+            "items": [
+                {
+                    "description": "Pad 2 [/SENS3_COL] of JMP15 on F.Cu",
+                    "pos": {
+                        "x": 40.250489,
+                        "y": 76.529786
+                    },
+                    "uuid": "527a8dc0-39dd-4bcc-a804-927b71076976"
+                },
+                {
+                    "description": "Track [/SENS4_A] on F.Cu, length 29.1475 mm",
+                    "pos": {
+                        "x": 20.55,
+                        "y": 77.0
+                    },
+                    "uuid": "8f873305-988a-4ecc-97fe-a3c4e07377d5"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /M8_GPIO and /M1_GPIO)",
+            "items": [
+                {
+                    "description": "Track [/M8_GPIO] on F.Cu, length 21.0921 mm",
+                    "pos": {
+                        "x": 52.9469,
+                        "y": 67.4969
+                    },
+                    "uuid": "490e81b5-bf1e-4be8-bc8d-c1609ad6c0a5"
+                },
+                {
+                    "description": "Pad 2 [/M1_GPIO] of JMP17 on F.Cu",
+                    "pos": {
+                        "x": 52.279937,
+                        "y": 53.374221
+                    },
+                    "uuid": "eee6edcb-656c-4674-b477-a83a99e03f59"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /12V_PROT and /M7_DRV)",
+            "items": [
+                {
+                    "description": "Pad 1 [/12V_PROT] of R_J4 on F.Cu",
+                    "pos": {
+                        "x": 80.45,
+                        "y": 70.0
+                    },
+                    "uuid": "c6fe6d7c-6a05-4a5d-8a56-ab2059a88061"
+                },
+                {
+                    "description": "Pad 2 [/M7_DRV] of JMP09 on F.Cu",
+                    "pos": {
+                        "x": 81.320609,
+                        "y": 69.016479
+                    },
+                    "uuid": "dea9ee9c-6bab-4448-b845-d792d3197de9"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /I2C_SCL and /I2C_SDA)",
+            "items": [
+                {
+                    "description": "Pad 1 [/I2C_SCL] of JMP10 on F.Cu",
+                    "pos": {
+                        "x": 32.955783,
+                        "y": 49.366236
+                    },
+                    "uuid": "573ad9fe-69a4-4966-90b0-ff13b580800b"
+                },
+                {
+                    "description": "Pad 1 [/I2C_SDA] of JMP11 on F.Cu",
+                    "pos": {
+                        "x": 32.984887,
+                        "y": 49.827006
+                    },
+                    "uuid": "b8eb56f5-0736-410a-8ff9-227e102c549f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /I2C_SCL and unconnected-(U_MCU1-SENSOR_VN-Pad5))",
+            "items": [
+                {
+                    "description": "Pad 2 [/I2C_SCL] of JMP10 on F.Cu",
+                    "pos": {
+                        "x": 36.044217,
+                        "y": 49.633764
+                    },
+                    "uuid": "cf105092-cc41-4502-9be7-9edc9aaaa87f"
+                },
+                {
+                    "description": "Pad 5 [unconnected-(U_MCU1-SENSOR_VN-Pad5)] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 37.25,
+                        "y": 49.82
+                    },
+                    "uuid": "dce4136c-ff04-401d-81a7-348750ace489"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2177 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/UART_TX] of JMP12 on F.Cu",
+                    "pos": {
+                        "x": 31.544937,
+                        "y": 51.12518
+                    },
+                    "uuid": "771d66e2-3ffd-4c96-bbd3-dfa5b5d92425"
+                },
+                {
+                    "description": "Pad 1 [/I2C_SDA] of JMP11 on F.Cu",
+                    "pos": {
+                        "x": 32.984887,
+                        "y": 49.827006
+                    },
+                    "uuid": "b8eb56f5-0736-410a-8ff9-227e102c549f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /I2C_SDA and unconnected-(U_MCU1-SENSOR_VP-Pad4))",
+            "items": [
+                {
+                    "description": "Pad 2 [/I2C_SDA] of JMP11 on F.Cu",
+                    "pos": {
+                        "x": 36.015113,
+                        "y": 49.172994
+                    },
+                    "uuid": "3afef057-fe98-4d97-b421-0b3c8f59f11c"
+                },
+                {
+                    "description": "Pad 4 [unconnected-(U_MCU1-SENSOR_VP-Pad4)] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 37.25,
+                        "y": 48.55
+                    },
+                    "uuid": "8e589d0f-3be5-44bd-bed3-e0cf0fb4cb6b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /SENS2_A and /SENS1_A)",
+            "items": [
+                {
+                    "description": "Pad 1 [/SENS2_A] of JMP18 on F.Cu",
+                    "pos": {
+                        "x": 26.111609,
+                        "y": 76.270142
+                    },
+                    "uuid": "898b8907-860d-4093-828f-a88f0a601acc"
+                },
+                {
+                    "description": "Pad 1 [/SENS1_A] of JMP19 on F.Cu",
+                    "pos": {
+                        "x": 26.348844,
+                        "y": 76.40659
+                    },
+                    "uuid": "e6219263-8828-4fc8-a4c3-5aa08f7b8f60"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /SENS1_A and /SENS2_A)",
+            "items": [
+                {
+                    "description": "Pad 2 [/SENS1_A] of JMP19 on F.Cu",
+                    "pos": {
+                        "x": 27.651156,
+                        "y": 73.59341
+                    },
+                    "uuid": "2cc481c7-3abe-46f1-9d63-69f48dae2613"
+                },
+                {
+                    "description": "Pad 2 [/SENS2_A] of JMP18 on F.Cu",
+                    "pos": {
+                        "x": 27.888391,
+                        "y": 73.729858
+                    },
+                    "uuid": "55422bfd-d170-4f6d-8423-2e3803a650a7"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /I2C_SDA and /I2C_SCL)",
+            "items": [
+                {
+                    "description": "Pad 2 [/I2C_SDA] of JMP11 on F.Cu",
+                    "pos": {
+                        "x": 36.015113,
+                        "y": 49.172994
+                    },
+                    "uuid": "3afef057-fe98-4d97-b421-0b3c8f59f11c"
+                },
+                {
+                    "description": "Pad 2 [/I2C_SCL] of JMP10 on F.Cu",
+                    "pos": {
+                        "x": 36.044217,
+                        "y": 49.633764
+                    },
+                    "uuid": "cf105092-cc41-4502-9be7-9edc9aaaa87f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /I2C_SDA and unconnected-(U_MCU1-SENSOR_VN-Pad5))",
+            "items": [
+                {
+                    "description": "Pad 2 [/I2C_SDA] of JMP11 on F.Cu",
+                    "pos": {
+                        "x": 36.015113,
+                        "y": 49.172994
+                    },
+                    "uuid": "3afef057-fe98-4d97-b421-0b3c8f59f11c"
+                },
+                {
+                    "description": "Pad 5 [unconnected-(U_MCU1-SENSOR_VN-Pad5)] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 37.25,
+                        "y": 49.82
+                    },
+                    "uuid": "dce4136c-ff04-401d-81a7-348750ace489"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /GND and /3V3_RAIL)",
+            "items": [
+                {
+                    "description": "Pad 5 [/GND] of U5 on F.Cu",
+                    "pos": {
+                        "x": 25.65,
+                        "y": 84.19
+                    },
+                    "uuid": "2ddd9eae-e4d3-42da-ad63-0f66037044d3"
+                },
+                {
+                    "description": "Pad 2 [/3V3_RAIL] of JMP01 on F.Cu",
+                    "pos": {
+                        "x": 23.765244,
+                        "y": 84.895353
+                    },
+                    "uuid": "4064ea5c-e43f-4013-a785-fdbcda8f490a"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /M7_DRV and /M6_DRV)",
+            "items": [
+                {
+                    "description": "Pad 1 [/M7_DRV] of JMP09 on F.Cu",
+                    "pos": {
+                        "x": 80.679391,
+                        "y": 65.983521
+                    },
+                    "uuid": "73728208-2200-44b5-91c2-b9c3b22f1139"
+                },
+                {
+                    "description": "Pad 2 [/M6_DRV] of JMP08 on F.Cu",
+                    "pos": {
+                        "x": 81.513721,
+                        "y": 64.462392
+                    },
+                    "uuid": "b76d9722-b323-46bd-918a-95f95152839f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /M6_DRV and /M5_DRV)",
+            "items": [
+                {
+                    "description": "Pad 1 [/M6_DRV] of JMP08 on F.Cu",
+                    "pos": {
+                        "x": 80.486279,
+                        "y": 61.537608
+                    },
+                    "uuid": "69a7fc35-029d-4a31-b788-83a58887a436"
+                },
+                {
+                    "description": "Pad 2 [/M5_DRV] of JMP07 on F.Cu",
+                    "pos": {
+                        "x": 81.830186,
+                        "y": 61.308927
+                    },
+                    "uuid": "6b5ea961-991a-464f-9381-b075a87c90ad"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.1060 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/12V_PROT] of U_BUCK1 on F.Cu",
+                    "pos": {
+                        "x": 24.525,
+                        "y": 14.095
+                    },
+                    "uuid": "80dce708-58c6-4aef-92f7-7156c2245a24"
+                },
+                {
+                    "description": "Pad 2 [/GND] of JMP03 on F.Cu",
+                    "pos": {
+                        "x": 26.441176,
+                        "y": 13.445758
+                    },
+                    "uuid": "e79c6ba0-afc4-4b3a-ac2e-caedd97aa129"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets unconnected-(U_MCU1-SENSOR_VP-Pad4) and /I2C_SCL)",
+            "items": [
+                {
+                    "description": "Pad 4 [unconnected-(U_MCU1-SENSOR_VP-Pad4)] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 37.25,
+                        "y": 48.55
+                    },
+                    "uuid": "8e589d0f-3be5-44bd-bed3-e0cf0fb4cb6b"
+                },
+                {
+                    "description": "Pad 2 [/I2C_SCL] of JMP10 on F.Cu",
+                    "pos": {
+                        "x": 36.044217,
+                        "y": 49.633764
+                    },
+                    "uuid": "cf105092-cc41-4502-9be7-9edc9aaaa87f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.1163 mm)",
+            "items": [
+                {
+                    "description": "Pad 6 [/SENS3_COL] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 37.25,
+                        "y": 51.09
+                    },
+                    "uuid": "98890a2c-4d69-4f9a-b50a-37af848d4967"
+                },
+                {
+                    "description": "Pad 2 [/I2C_SCL] of JMP10 on F.Cu",
+                    "pos": {
+                        "x": 36.044217,
+                        "y": 49.633764
+                    },
+                    "uuid": "cf105092-cc41-4502-9be7-9edc9aaaa87f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint R_J4",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 70.0
+                    },
+                    "uuid": "02023c44-4799-4923-988d-1f3e67f0d16b"
+                },
+                {
+                    "description": "Footprint JMP09",
+                    "pos": {
+                        "x": 81.0,
+                        "y": 67.5
+                    },
+                    "uuid": "9fc85498-cec5-4f97-82a1-81e4b262d1cd"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint JMP06",
+                    "pos": {
+                        "x": 81.0,
+                        "y": 52.5
+                    },
+                    "uuid": "101ae8cb-9800-4770-8730-63eca5cc90b9"
+                },
+                {
+                    "description": "Footprint U_DRV1",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 58.0
+                    },
+                    "uuid": "28bb9b24-3fe3-46b2-9f76-3cede34077f6"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint U_DRV1",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 58.0
+                    },
+                    "uuid": "28bb9b24-3fe3-46b2-9f76-3cede34077f6"
+                },
+                {
+                    "description": "Footprint JMP07",
+                    "pos": {
+                        "x": 81.0,
+                        "y": 60.0
+                    },
+                    "uuid": "4824ef93-280e-4dda-baad-8af73b99e473"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint U_DRV1",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 58.0
+                    },
+                    "uuid": "28bb9b24-3fe3-46b2-9f76-3cede34077f6"
+                },
+                {
+                    "description": "Footprint JMP08",
+                    "pos": {
+                        "x": 81.0,
+                        "y": 63.0
+                    },
+                    "uuid": "c0032642-ff73-4482-a815-6e318539113c"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint JMP10",
+                    "pos": {
+                        "x": 34.5,
+                        "y": 49.5
+                    },
+                    "uuid": "29196d17-8550-4511-b750-5af712ee23b8"
+                },
+                {
+                    "description": "Footprint U_MCU1",
+                    "pos": {
+                        "x": 46.0,
+                        "y": 50.0
+                    },
+                    "uuid": "74c28b57-abff-40c3-aba3-bfb47bd642f0"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint JMP10",
+                    "pos": {
+                        "x": 34.5,
+                        "y": 49.5
+                    },
+                    "uuid": "29196d17-8550-4511-b750-5af712ee23b8"
+                },
+                {
+                    "description": "Footprint JMP12",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 51.0
+                    },
+                    "uuid": "7c984b52-d388-4867-b67e-a617dbd785e1"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint JMP10",
+                    "pos": {
+                        "x": 34.5,
+                        "y": 49.5
+                    },
+                    "uuid": "29196d17-8550-4511-b750-5af712ee23b8"
+                },
+                {
+                    "description": "Footprint JMP11",
+                    "pos": {
+                        "x": 34.5,
+                        "y": 49.5
+                    },
+                    "uuid": "e2c2fff1-2db9-43e8-a410-583712ced9a2"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint JMP07",
+                    "pos": {
+                        "x": 81.0,
+                        "y": 60.0
+                    },
+                    "uuid": "4824ef93-280e-4dda-baad-8af73b99e473"
+                },
+                {
+                    "description": "Footprint JMP08",
+                    "pos": {
+                        "x": 81.0,
+                        "y": 63.0
+                    },
+                    "uuid": "c0032642-ff73-4482-a815-6e318539113c"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint U_BUCK1",
+                    "pos": {
+                        "x": 27.0,
+                        "y": 16.0
+                    },
+                    "uuid": "4e7b30ba-469f-4176-8018-0d6f6884f437"
+                },
+                {
+                    "description": "Footprint JMP03",
+                    "pos": {
+                        "x": 27.0,
+                        "y": 12.0
+                    },
+                    "uuid": "8a3f10e7-0684-4596-82d3-6b502df2c36e"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint C_BULK1",
+                    "pos": {
+                        "x": 27.0,
+                        "y": 8.0
+                    },
+                    "uuid": "548e63de-d509-43bb-896a-68c556b4dfa1"
+                },
+                {
+                    "description": "Footprint JMP03",
+                    "pos": {
+                        "x": 27.0,
+                        "y": 12.0
+                    },
+                    "uuid": "8a3f10e7-0684-4596-82d3-6b502df2c36e"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint R15",
+                    "pos": {
+                        "x": 19.0,
+                        "y": 82.0
+                    },
+                    "uuid": "55286c67-6c8f-4a2a-a19f-06373ab87bc0"
+                },
+                {
+                    "description": "Footprint JMP01",
+                    "pos": {
+                        "x": 22.5,
+                        "y": 84.0
+                    },
+                    "uuid": "e467389e-683c-4372-81dd-0172b9d6562a"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint U_MCU1",
+                    "pos": {
+                        "x": 46.0,
+                        "y": 50.0
+                    },
+                    "uuid": "74c28b57-abff-40c3-aba3-bfb47bd642f0"
+                },
+                {
+                    "description": "Footprint JMP11",
+                    "pos": {
+                        "x": 34.5,
+                        "y": 49.5
+                    },
+                    "uuid": "e2c2fff1-2db9-43e8-a410-583712ced9a2"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint U_MCU1",
+                    "pos": {
+                        "x": 46.0,
+                        "y": 50.0
+                    },
+                    "uuid": "74c28b57-abff-40c3-aba3-bfb47bd642f0"
+                },
+                {
+                    "description": "Footprint JMP17",
+                    "pos": {
+                        "x": 51.0,
+                        "y": 52.5
+                    },
+                    "uuid": "e94636c7-760a-4906-a918-2a4c52ae4249"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint JMP12",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 51.0
+                    },
+                    "uuid": "7c984b52-d388-4867-b67e-a617dbd785e1"
+                },
+                {
+                    "description": "Footprint JMP11",
+                    "pos": {
+                        "x": 34.5,
+                        "y": 49.5
+                    },
+                    "uuid": "e2c2fff1-2db9-43e8-a410-583712ced9a2"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint JMP09",
+                    "pos": {
+                        "x": 81.0,
+                        "y": 67.5
+                    },
+                    "uuid": "9fc85498-cec5-4f97-82a1-81e4b262d1cd"
+                },
+                {
+                    "description": "Footprint JMP08",
+                    "pos": {
+                        "x": 81.0,
+                        "y": 63.0
+                    },
+                    "uuid": "c0032642-ff73-4482-a815-6e318539113c"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 70.0,
+                        "y": 52.0
+                    },
+                    "uuid": "a7033c5f-e66b-412e-aa40-68564445acb6"
+                },
+                {
+                    "description": "Footprint JMP05",
+                    "pos": {
+                        "x": 70.5,
+                        "y": 54.0
+                    },
+                    "uuid": "b819e7ec-124f-4b52-9864-12bd854e8212"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 70.0,
+                        "y": 52.0
+                    },
+                    "uuid": "a7033c5f-e66b-412e-aa40-68564445acb6"
+                },
+                {
+                    "description": "Footprint JMP02",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 46.5
+                    },
+                    "uuid": "ee972ffe-a1af-424f-86a8-38b69374fc96"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 70.0,
+                        "y": 40.0
+                    },
+                    "uuid": "c2d7ee1e-aded-4484-ba1a-6f208803c9d8"
+                },
+                {
+                    "description": "Footprint JMP02",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 46.5
+                    },
+                    "uuid": "ee972ffe-a1af-424f-86a8-38b69374fc96"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint JMP19",
+                    "pos": {
+                        "x": 27.0,
+                        "y": 75.0
+                    },
+                    "uuid": "ce3a98b3-458a-40ed-8fa4-3516aa2629d2"
+                },
+                {
+                    "description": "Footprint JMP18",
+                    "pos": {
+                        "x": 27.0,
+                        "y": 75.0
+                    },
+                    "uuid": "d5442573-92e0-43fb-8399-d88d84a18687"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint U5",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 88.0
+                    },
+                    "uuid": "da90f00a-d521-4bdf-a7a4-9bbfb00421e6"
+                },
+                {
+                    "description": "Footprint JMP01",
+                    "pos": {
+                        "x": 22.5,
+                        "y": 84.0
+                    },
+                    "uuid": "e467389e-683c-4372-81dd-0172b9d6562a"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 4 [unconnected-(U_MCU1-SENSOR_VP-Pad4)] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 37.25,
+                        "y": 48.55
+                    },
+                    "uuid": "8e589d0f-3be5-44bd-bed3-e0cf0fb4cb6b"
+                },
+                {
+                    "description": "Pad 2 [/I2C_SCL] of JMP10 on F.Cu",
+                    "pos": {
+                        "x": 36.044217,
+                        "y": 49.633764
+                    },
+                    "uuid": "cf105092-cc41-4502-9be7-9edc9aaaa87f"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 4 [unconnected-(U_MCU1-SENSOR_VP-Pad4)] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 37.25,
+                        "y": 48.55
+                    },
+                    "uuid": "8e589d0f-3be5-44bd-bed3-e0cf0fb4cb6b"
+                },
+                {
+                    "description": "Pad 2 [/I2C_SDA] of JMP11 on F.Cu",
+                    "pos": {
+                        "x": 36.015113,
+                        "y": 49.172994
+                    },
+                    "uuid": "3afef057-fe98-4d97-b421-0b3c8f59f11c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 1 [/SENS1_A] of JMP19 on F.Cu",
+                    "pos": {
+                        "x": 26.348844,
+                        "y": 76.40659
+                    },
+                    "uuid": "e6219263-8828-4fc8-a4c3-5aa08f7b8f60"
+                },
+                {
+                    "description": "Pad 1 [/SENS2_A] of JMP18 on F.Cu",
+                    "pos": {
+                        "x": 26.111609,
+                        "y": 76.270142
+                    },
+                    "uuid": "898b8907-860d-4093-828f-a88f0a601acc"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 1 [/I2C_SCL] of JMP10 on F.Cu",
+                    "pos": {
+                        "x": 32.955783,
+                        "y": 49.366236
+                    },
+                    "uuid": "573ad9fe-69a4-4966-90b0-ff13b580800b"
+                },
+                {
+                    "description": "Pad 1 [/I2C_SDA] of JMP11 on F.Cu",
+                    "pos": {
+                        "x": 32.984887,
+                        "y": 49.827006
+                    },
+                    "uuid": "b8eb56f5-0736-410a-8ff9-227e102c549f"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 2 [/SENS1_A] of JMP19 on F.Cu",
+                    "pos": {
+                        "x": 27.651156,
+                        "y": 73.59341
+                    },
+                    "uuid": "2cc481c7-3abe-46f1-9d63-69f48dae2613"
+                },
+                {
+                    "description": "Pad 2 [/SENS2_A] of JMP18 on F.Cu",
+                    "pos": {
+                        "x": 27.888391,
+                        "y": 73.729858
+                    },
+                    "uuid": "55422bfd-d170-4f6d-8423-2e3803a650a7"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 2 [/I2C_SCL] of JMP10 on F.Cu",
+                    "pos": {
+                        "x": 36.044217,
+                        "y": 49.633764
+                    },
+                    "uuid": "cf105092-cc41-4502-9be7-9edc9aaaa87f"
+                },
+                {
+                    "description": "Pad 2 [/I2C_SDA] of JMP11 on F.Cu",
+                    "pos": {
+                        "x": 36.015113,
+                        "y": 49.172994
+                    },
+                    "uuid": "3afef057-fe98-4d97-b421-0b3c8f59f11c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 1 [/M7_DRV] of JMP09 on F.Cu",
+                    "pos": {
+                        "x": 80.679391,
+                        "y": 65.983521
+                    },
+                    "uuid": "73728208-2200-44b5-91c2-b9c3b22f1139"
+                },
+                {
+                    "description": "Pad 2 [/M6_DRV] of JMP08 on F.Cu",
+                    "pos": {
+                        "x": 81.513721,
+                        "y": 64.462392
+                    },
+                    "uuid": "b76d9722-b323-46bd-918a-95f95152839f"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 5 [unconnected-(U_MCU1-SENSOR_VN-Pad5)] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 37.25,
+                        "y": 49.82
+                    },
+                    "uuid": "dce4136c-ff04-401d-81a7-348750ace489"
+                },
+                {
+                    "description": "Pad 2 [/I2C_SCL] of JMP10 on F.Cu",
+                    "pos": {
+                        "x": 36.044217,
+                        "y": 49.633764
+                    },
+                    "uuid": "cf105092-cc41-4502-9be7-9edc9aaaa87f"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 2 [/M7_DRV] of JMP09 on F.Cu",
+                    "pos": {
+                        "x": 81.320609,
+                        "y": 69.016479
+                    },
+                    "uuid": "dea9ee9c-6bab-4448-b845-d792d3197de9"
+                },
+                {
+                    "description": "Pad 1 [/12V_PROT] of R_J4 on F.Cu",
+                    "pos": {
+                        "x": 80.45,
+                        "y": 70.0
+                    },
+                    "uuid": "c6fe6d7c-6a05-4a5d-8a56-ab2059a88061"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/M8_GPIO] on F.Cu, length 21.0921 mm",
+                    "pos": {
+                        "x": 52.9469,
+                        "y": 67.4969
+                    },
+                    "uuid": "490e81b5-bf1e-4be8-bc8d-c1609ad6c0a5"
+                },
+                {
+                    "description": "Pad 2 [/M1_GPIO] of JMP17 on F.Cu",
+                    "pos": {
+                        "x": 52.279937,
+                        "y": 53.374221
+                    },
+                    "uuid": "eee6edcb-656c-4674-b477-a83a99e03f59"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 5 [unconnected-(U_MCU1-SENSOR_VN-Pad5)] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 37.25,
+                        "y": 49.82
+                    },
+                    "uuid": "dce4136c-ff04-401d-81a7-348750ace489"
+                },
+                {
+                    "description": "Pad 2 [/I2C_SDA] of JMP11 on F.Cu",
+                    "pos": {
+                        "x": 36.015113,
+                        "y": 49.172994
+                    },
+                    "uuid": "3afef057-fe98-4d97-b421-0b3c8f59f11c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 5 [/GND] of U5 on F.Cu",
+                    "pos": {
+                        "x": 25.65,
+                        "y": 84.19
+                    },
+                    "uuid": "2ddd9eae-e4d3-42da-ad63-0f66037044d3"
+                },
+                {
+                    "description": "Pad 2 [/3V3_RAIL] of JMP01 on F.Cu",
+                    "pos": {
+                        "x": 23.765244,
+                        "y": 84.895353
+                    },
+                    "uuid": "4064ea5c-e43f-4013-a785-fdbcda8f490a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Pad 1 [/M6_DRV] of JMP08 on F.Cu",
+                    "pos": {
+                        "x": 80.486279,
+                        "y": 61.537608
+                    },
+                    "uuid": "69a7fc35-029d-4a31-b788-83a58887a436"
+                },
+                {
+                    "description": "Pad 2 [/M5_DRV] of JMP07 on F.Cu",
+                    "pos": {
+                        "x": 81.830186,
+                        "y": 61.308927
+                    },
+                    "uuid": "6b5ea961-991a-464f-9381-b075a87c90ad"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/SENS4_A] on F.Cu, length 29.1475 mm",
+                    "pos": {
+                        "x": 20.55,
+                        "y": 77.0
+                    },
+                    "uuid": "8f873305-988a-4ecc-97fe-a3c4e07377d5"
+                },
+                {
+                    "description": "Pad 2 [/SENS3_COL] of JMP15 on F.Cu",
+                    "pos": {
+                        "x": 40.250489,
+                        "y": 76.529786
+                    },
+                    "uuid": "527a8dc0-39dd-4bcc-a804-927b71076976"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/SENS4_A] on F.Cu, length 29.1475 mm",
+                    "pos": {
+                        "x": 20.55,
+                        "y": 77.0
+                    },
+                    "uuid": "8f873305-988a-4ecc-97fe-a3c4e07377d5"
+                },
+                {
+                    "description": "Pad 1 [/SENS1_A] of JMP19 on F.Cu",
+                    "pos": {
+                        "x": 26.348844,
+                        "y": 76.40659
+                    },
+                    "uuid": "e6219263-8828-4fc8-a4c3-5aa08f7b8f60"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/SENS4_A] on F.Cu, length 29.1475 mm",
+                    "pos": {
+                        "x": 20.55,
+                        "y": 77.0
+                    },
+                    "uuid": "8f873305-988a-4ecc-97fe-a3c4e07377d5"
+                },
+                {
+                    "description": "Pad 1 [/SENS2_A] of JMP18 on F.Cu",
+                    "pos": {
+                        "x": 26.111609,
+                        "y": 76.270142
+                    },
+                    "uuid": "898b8907-860d-4093-828f-a88f0a601acc"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "NPTH pad of MH1",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 4.0
+                    },
+                    "uuid": "d714679d-9acc-4c2a-a85e-7019991efea3"
+                },
+                {
+                    "description": "Track [/GND] on F.Cu, length 4.6435 mm",
+                    "pos": {
+                        "x": 19.7,
+                        "y": 6.3495
+                    },
+                    "uuid": "c09c4ed5-4fcb-4f18-9d48-5ca049437c17"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "a311cbab-4d09-4433-82a4-773b0fa04761"
+                },
+                {
+                    "description": "Segment of J_IN on F.Silkscreen",
+                    "pos": {
+                        "x": 1.88,
+                        "y": 2.2
+                    },
+                    "uuid": "c9e6ec8e-ff8a-4852-a1d1-791053fb6650"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "34da5256-9720-409b-b025-907ec6988c6e"
+                },
+                {
+                    "description": "Segment of J_IN on F.Silkscreen",
+                    "pos": {
+                        "x": 1.88,
+                        "y": 100.12
+                    },
+                    "uuid": "45a809a5-1dd5-42d1-ba6d-4f3e43606a82"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "a311cbab-4d09-4433-82a4-773b0fa04761"
+                },
+                {
+                    "description": "Segment of J_IN on F.Silkscreen",
+                    "pos": {
+                        "x": 4.0,
+                        "y": -0.12
+                    },
+                    "uuid": "e442bde6-835b-4559-aa3f-29458e6c89d4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "a311cbab-4d09-4433-82a4-773b0fa04761"
+                },
+                {
+                    "description": "Segment of J_IN on F.Silkscreen",
+                    "pos": {
+                        "x": 11.12,
+                        "y": -0.12
+                    },
+                    "uuid": "f779e596-652d-4564-9eaa-441fa9a8a9d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 0.0
+                    },
+                    "uuid": "4d343b8d-fd5e-4ae3-b88c-4894578bea34"
+                },
+                {
+                    "description": "Reference field of J_OUT",
+                    "pos": {
+                        "x": 100.12,
+                        "y": 50.0
+                    },
+                    "uuid": "85fe6e39-d389-458c-80b1-95f417f14f7c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "a311cbab-4d09-4433-82a4-773b0fa04761"
+                },
+                {
+                    "description": "Segment of J_OUT on F.Silkscreen",
+                    "pos": {
+                        "x": 89.88,
+                        "y": 2.2
+                    },
+                    "uuid": "7447a19f-a17f-4698-ab62-c2567d16e72e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "34da5256-9720-409b-b025-907ec6988c6e"
+                },
+                {
+                    "description": "Segment of J_OUT on F.Silkscreen",
+                    "pos": {
+                        "x": 89.88,
+                        "y": 100.12
+                    },
+                    "uuid": "7bb01347-475a-4551-be86-5220e54af52d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "a311cbab-4d09-4433-82a4-773b0fa04761"
+                },
+                {
+                    "description": "Segment of J_OUT on F.Silkscreen",
+                    "pos": {
+                        "x": 92.0,
+                        "y": -0.12
+                    },
+                    "uuid": "00828952-bc18-4757-80b3-6b82463377c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "a311cbab-4d09-4433-82a4-773b0fa04761"
+                },
+                {
+                    "description": "Segment of J_OUT on F.Silkscreen",
+                    "pos": {
+                        "x": 99.12,
+                        "y": -0.12
+                    },
+                    "uuid": "587e7d3e-6f08-4b48-875d-6137f22d1875"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Footprint 'ESP32-WROOM-32E' does not match copy in library 'RF_Module'",
+            "items": [
+                {
+                    "description": "Footprint U_MCU1",
+                    "pos": {
+                        "x": 46.0,
+                        "y": 50.0
+                    },
+                    "uuid": "74c28b57-abff-40c3-aba3-bfb47bd642f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'MountingHole_3.2mm' not found in library 'MountingHole'",
+            "items": [
+                {
+                    "description": "Footprint MH4",
+                    "pos": {
+                        "x": 86.0,
+                        "y": 96.0
+                    },
+                    "uuid": "83922c87-d29b-4be7-bdbe-a95b6a51bdc5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'MountingHole_3.2mm' not found in library 'MountingHole'",
+            "items": [
+                {
+                    "description": "Footprint MH3",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 96.0
+                    },
+                    "uuid": "addadc34-ac5d-4db4-9f9c-305eda126004"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'MountingHole_3.2mm' not found in library 'MountingHole'",
+            "items": [
+                {
+                    "description": "Footprint MH1",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 4.0
+                    },
+                    "uuid": "b77b95a8-3d62-4521-bc44-92fbdab87349"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'MountingHole_3.2mm' not found in library 'MountingHole'",
+            "items": [
+                {
+                    "description": "Footprint MH2",
+                    "pos": {
+                        "x": 86.0,
+                        "y": 4.0
+                    },
+                    "uuid": "f9f6e3d4-da3e-4b6a-a366-565c65e45cb7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of JMP19",
+                    "pos": {
+                        "x": 25.339316,
+                        "y": 74.231216
+                    },
+                    "uuid": "490f7e68-d04d-4df8-9094-27b0cdb44d16"
+                },
+                {
+                    "description": "Reference field of JMP18",
+                    "pos": {
+                        "x": 25.500413,
+                        "y": 73.951125
+                    },
+                    "uuid": "9007a901-bc07-4c64-9ddd-6a7d991deef1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of JMP19 on F.Silkscreen",
+                    "pos": {
+                        "x": 25.868755,
+                        "y": 75.277503
+                    },
+                    "uuid": "5c2dd9a5-a7b6-49af-8a07-4bdda195a5cd"
+                },
+                {
+                    "description": "Segment of JMP18 on F.Silkscreen",
+                    "pos": {
+                        "x": 25.837583,
+                        "y": 75.074218
+                    },
+                    "uuid": "a00be77a-e1a0-43d1-b727-ef9105026113"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of JMP18 on F.Silkscreen",
+                    "pos": {
+                        "x": 27.328975,
+                        "y": 76.117362
+                    },
+                    "uuid": "4475df18-0755-42da-a460-43a38ddb5016"
+                },
+                {
+                    "description": "Segment of JMP19 on F.Silkscreen",
+                    "pos": {
+                        "x": 27.520365,
+                        "y": 76.042086
+                    },
+                    "uuid": "47e5a271-cdc1-41b2-9414-7c2491f486bc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of JMP14",
+                    "pos": {
+                        "x": 25.507143,
+                        "y": 70.058432
+                    },
+                    "uuid": "8fd4a5bc-8677-4895-8357-aa1520cf1183"
+                },
+                {
+                    "description": "Reference field of JMP18",
+                    "pos": {
+                        "x": 25.500413,
+                        "y": 73.951125
+                    },
+                    "uuid": "9007a901-bc07-4c64-9ddd-6a7d991deef1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of JMP11",
+                    "pos": {
+                        "x": 34.113922,
+                        "y": 47.711189
+                    },
+                    "uuid": "0073c259-5a5d-47d7-b3c4-9e497ae224f6"
+                },
+                {
+                    "description": "Reference field of JMP10",
+                    "pos": {
+                        "x": 34.657928,
+                        "y": 47.676827
+                    },
+                    "uuid": "b551682a-da69-48aa-a17b-6d27a815a901"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of JMP11",
+                    "pos": {
+                        "x": 34.113922,
+                        "y": 47.711189
+                    },
+                    "uuid": "0073c259-5a5d-47d7-b3c4-9e497ae224f6"
+                },
+                {
+                    "description": "Reference field of JMP12",
+                    "pos": {
+                        "x": 30.147793,
+                        "y": 49.175978
+                    },
+                    "uuid": "8395f893-e07e-42e3-bf89-adb6469f2c57"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of JMP13",
+                    "pos": {
+                        "x": 30.284783,
+                        "y": 52.192295
+                    },
+                    "uuid": "601f3b2e-9c33-4e2a-af7d-a49a632e9f3b"
+                },
+                {
+                    "description": "Segment of JMP12 on F.Silkscreen",
+                    "pos": {
+                        "x": 29.201818,
+                        "y": 51.848309
+                    },
+                    "uuid": "a34a5937-cb60-4593-8e72-a16a8a74f0d4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of JMP10 on F.Silkscreen",
+                    "pos": {
+                        "x": 33.697116,
+                        "y": 50.34386
+                    },
+                    "uuid": "02f815e6-4c6a-43f5-9a26-048deed36aca"
+                },
+                {
+                    "description": "Segment of JMP11 on F.Silkscreen",
+                    "pos": {
+                        "x": 33.981283,
+                        "y": 50.542908
+                    },
+                    "uuid": "d6edca3f-264d-4c17-81b9-05b6909bdabc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of JMP10 on F.Silkscreen",
+                    "pos": {
+                        "x": 33.854181,
+                        "y": 48.53065
+                    },
+                    "uuid": "1b563f5b-dea2-43bb-b15f-b7c4921d7e35"
+                },
+                {
+                    "description": "Segment of JMP11 on F.Silkscreen",
+                    "pos": {
+                        "x": 33.597317,
+                        "y": 48.763872
+                    },
+                    "uuid": "c9eb1e35-36d4-4f06-aa22-69b6eadae0f4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of U_LDO1",
+                    "pos": {
+                        "x": 53.0,
+                        "y": 53.37
+                    },
+                    "uuid": "7758c477-74d1-43d4-8e93-8f199961acc3"
+                },
+                {
+                    "description": "Segment of JMP17 on F.Silkscreen",
+                    "pos": {
+                        "x": 49.886363,
+                        "y": 52.841373
+                    },
+                    "uuid": "ed8995fb-9462-4f2a-966b-284c0f818d7b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of R19",
+                    "pos": {
+                        "x": 65.0,
+                        "y": 59.55
+                    },
+                    "uuid": "044ced99-a70c-40be-8ab8-403a49d8052c"
+                },
+                {
+                    "description": "Polygon of U3 on F.Silkscreen",
+                    "pos": {
+                        "x": 64.24,
+                        "y": 60.19
+                    },
+                    "uuid": "f42edd5b-d14a-430c-b107-7eea93d1438b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of JMP06",
+                    "pos": {
+                        "x": 79.454621,
+                        "y": 51.519844
+                    },
+                    "uuid": "ad65d122-7c5d-478b-a84e-053c6953f626"
+                },
+                {
+                    "description": "Segment of U_DRV1 on F.Silkscreen",
+                    "pos": {
+                        "x": 78.14,
+                        "y": 52.36
+                    },
+                    "uuid": "ea9d6e86-d208-4e8a-b876-09ed143edee7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of U_DRV1 on F.Silkscreen",
+                    "pos": {
+                        "x": 78.14,
+                        "y": 52.115
+                    },
+                    "uuid": "8b7d1f38-6dd7-491b-b6d7-c9b9a3adadc4"
+                },
+                {
+                    "description": "Reference field of JMP06",
+                    "pos": {
+                        "x": 79.454621,
+                        "y": 51.519844
+                    },
+                    "uuid": "ad65d122-7c5d-478b-a84e-053c6953f626"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of JMP06 on F.Silkscreen",
+                    "pos": {
+                        "x": 79.842115,
+                        "y": 52.626583
+                    },
+                    "uuid": "31204ff2-1616-428e-a098-cf2acd88df5d"
+                },
+                {
+                    "description": "Segment of U_DRV1 on F.Silkscreen",
+                    "pos": {
+                        "x": 78.14,
+                        "y": 52.115
+                    },
+                    "uuid": "8b7d1f38-6dd7-491b-b6d7-c9b9a3adadc4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of R_J4 on F.Silkscreen",
+                    "pos": {
+                        "x": 81.272936,
+                        "y": 69.09
+                    },
+                    "uuid": "70e63069-8308-4d37-a391-03164eaf1424"
+                },
+                {
+                    "description": "Reference field of JMP09",
+                    "pos": {
+                        "x": 82.790424,
+                        "y": 67.121475
+                    },
+                    "uuid": "955b463e-93b1-41e3-870d-cd1809077f48"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of JMP08",
+                    "pos": {
+                        "x": 82.726566,
+                        "y": 62.393478
+                    },
+                    "uuid": "14d8a11f-9e69-4521-af5b-1e773f2e1331"
+                },
+                {
+                    "description": "Segment of U_DRV1 on F.Silkscreen",
+                    "pos": {
+                        "x": 85.86,
+                        "y": 63.885
+                    },
+                    "uuid": "b101eff3-06a1-4516-849a-3fede729f484"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of U_DRV1 on F.Silkscreen",
+                    "pos": {
+                        "x": 85.86,
+                        "y": 63.885
+                    },
+                    "uuid": "b101eff3-06a1-4516-849a-3fede729f484"
+                },
+                {
+                    "description": "Segment of JMP08 on F.Silkscreen",
+                    "pos": {
+                        "x": 79.900461,
+                        "y": 62.615633
+                    },
+                    "uuid": "f512a0d4-e289-4e3c-823a-30774e0d6690"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of JMP02 on F.Silkscreen",
+                    "pos": {
+                        "x": 68.09,
+                        "y": 45.772936
+                    },
+                    "uuid": "92d50018-4487-4cc8-856e-89a1425b9f88"
+                },
+                {
+                    "description": "Segment of U2 on F.Silkscreen",
+                    "pos": {
+                        "x": 66.5875,
+                        "y": 47.005
+                    },
+                    "uuid": "a04182e7-5ef5-431b-abe8-44973c59fd4c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of U2 on F.Silkscreen",
+                    "pos": {
+                        "x": 66.5875,
+                        "y": 47.005
+                    },
+                    "uuid": "a04182e7-5ef5-431b-abe8-44973c59fd4c"
+                },
+                {
+                    "description": "Segment of JMP02 on F.Silkscreen",
+                    "pos": {
+                        "x": 69.91,
+                        "y": 45.772936
+                    },
+                    "uuid": "cafc6d0b-5e91-475b-95d7-7a9ed48f843c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of U1 on F.Silkscreen",
+                    "pos": {
+                        "x": 73.4125,
+                        "y": 44.995
+                    },
+                    "uuid": "023f03e2-a1fa-461f-b747-05a6f9af2535"
+                },
+                {
+                    "description": "Reference field of JMP02",
+                    "pos": {
+                        "x": 70.83,
+                        "y": 46.5
+                    },
+                    "uuid": "bd5e7e90-6a79-4ea9-ada4-177b02a0f675"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of JMP05",
+                    "pos": {
+                        "x": 72.062446,
+                        "y": 54.952713
+                    },
+                    "uuid": "4a459c51-f27a-49b5-9ac5-e8d90a48bab6"
+                },
+                {
+                    "description": "Segment of U2 on F.Silkscreen",
+                    "pos": {
+                        "x": 73.4125,
+                        "y": 56.995
+                    },
+                    "uuid": "b91b8ffb-6e2b-4cb8-ad1d-a178e452ba85"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of U_BUCK1 on F.Silkscreen",
+                    "pos": {
+                        "x": 24.94,
+                        "y": 13.44
+                    },
+                    "uuid": "2b11e15c-b366-4522-82f7-81bbab94be86"
+                },
+                {
+                    "description": "Reference field of JMP03",
+                    "pos": {
+                        "x": 28.706927,
+                        "y": 12.659773
+                    },
+                    "uuid": "81c3a900-b2fd-4c9b-80ff-0fc17189aed0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of C_BULK1 on F.Silkscreen",
+                    "pos": {
+                        "x": 24.654437,
+                        "y": 11.41
+                    },
+                    "uuid": "365a9e34-b2b1-46dc-82c3-bc6f7f2068cd"
+                },
+                {
+                    "description": "Segment of JMP03 on F.Silkscreen",
+                    "pos": {
+                        "x": 26.41333,
+                        "y": 10.993749
+                    },
+                    "uuid": "87dec380-314f-4514-889e-4a1a907b13d1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of C_BULK1 on F.Silkscreen",
+                    "pos": {
+                        "x": 24.654437,
+                        "y": 11.41
+                    },
+                    "uuid": "365a9e34-b2b1-46dc-82c3-bc6f7f2068cd"
+                },
+                {
+                    "description": "Reference field of JMP03",
+                    "pos": {
+                        "x": 28.706927,
+                        "y": 12.659773
+                    },
+                    "uuid": "81c3a900-b2fd-4c9b-80ff-0fc17189aed0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of JMP18 on F.Silkscreen",
+                    "pos": {
+                        "x": 25.837583,
+                        "y": 75.074218
+                    },
+                    "uuid": "a00be77a-e1a0-43d1-b727-ef9105026113"
+                },
+                {
+                    "description": "Pad 2 [/SENS1_A] of JMP19 on F.Cu",
+                    "pos": {
+                        "x": 27.651156,
+                        "y": 73.59341
+                    },
+                    "uuid": "2cc481c7-3abe-46f1-9d63-69f48dae2613"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of JMP18 on F.Silkscreen",
+                    "pos": {
+                        "x": 27.328975,
+                        "y": 76.117362
+                    },
+                    "uuid": "4475df18-0755-42da-a460-43a38ddb5016"
+                },
+                {
+                    "description": "Pad 1 [/SENS1_A] of JMP19 on F.Cu",
+                    "pos": {
+                        "x": 26.348844,
+                        "y": 76.40659
+                    },
+                    "uuid": "e6219263-8828-4fc8-a4c3-5aa08f7b8f60"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of JMP10",
+                    "pos": {
+                        "x": 34.657928,
+                        "y": 47.676827
+                    },
+                    "uuid": "b551682a-da69-48aa-a17b-6d27a815a901"
+                },
+                {
+                    "description": "Pad 3 [/MCU_EN] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 37.25,
+                        "y": 47.28
+                    },
+                    "uuid": "151e48e2-b1e4-487b-8afc-d9799f338e5b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of JMP10",
+                    "pos": {
+                        "x": 34.657928,
+                        "y": 47.676827
+                    },
+                    "uuid": "b551682a-da69-48aa-a17b-6d27a815a901"
+                },
+                {
+                    "description": "Pad 4 [unconnected-(U_MCU1-SENSOR_VP-Pad4)] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 37.25,
+                        "y": 48.55
+                    },
+                    "uuid": "8e589d0f-3be5-44bd-bed3-e0cf0fb4cb6b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of JMP10",
+                    "pos": {
+                        "x": 34.657928,
+                        "y": 47.676827
+                    },
+                    "uuid": "b551682a-da69-48aa-a17b-6d27a815a901"
+                },
+                {
+                    "description": "Pad 2 [/I2C_SDA] of JMP11 on F.Cu",
+                    "pos": {
+                        "x": 36.015113,
+                        "y": 49.172994
+                    },
+                    "uuid": "3afef057-fe98-4d97-b421-0b3c8f59f11c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of JMP12",
+                    "pos": {
+                        "x": 30.147793,
+                        "y": 49.175978
+                    },
+                    "uuid": "8395f893-e07e-42e3-bf89-adb6469f2c57"
+                },
+                {
+                    "description": "Pad 1 [/I2C_SCL] of JMP10 on F.Cu",
+                    "pos": {
+                        "x": 32.955783,
+                        "y": 49.366236
+                    },
+                    "uuid": "573ad9fe-69a4-4966-90b0-ff13b580800b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of JMP12",
+                    "pos": {
+                        "x": 30.147793,
+                        "y": 49.175978
+                    },
+                    "uuid": "8395f893-e07e-42e3-bf89-adb6469f2c57"
+                },
+                {
+                    "description": "Pad 1 [/I2C_SDA] of JMP11 on F.Cu",
+                    "pos": {
+                        "x": 32.984887,
+                        "y": 49.827006
+                    },
+                    "uuid": "b8eb56f5-0736-410a-8ff9-227e102c549f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of JMP13",
+                    "pos": {
+                        "x": 30.284783,
+                        "y": 52.192295
+                    },
+                    "uuid": "601f3b2e-9c33-4e2a-af7d-a49a632e9f3b"
+                },
+                {
+                    "description": "Pad 1 [/UART_TX] of JMP12 on F.Cu",
+                    "pos": {
+                        "x": 28.455063,
+                        "y": 50.87482
+                    },
+                    "uuid": "bfc76317-f77a-4122-b630-1029b3a90085"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of JMP13",
+                    "pos": {
+                        "x": 30.284783,
+                        "y": 52.192295
+                    },
+                    "uuid": "601f3b2e-9c33-4e2a-af7d-a49a632e9f3b"
+                },
+                {
+                    "description": "Pad 2 [/UART_TX] of JMP12 on F.Cu",
+                    "pos": {
+                        "x": 31.544937,
+                        "y": 51.12518
+                    },
+                    "uuid": "771d66e2-3ffd-4c96-bbd3-dfa5b5d92425"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of JMP10 on F.Silkscreen",
+                    "pos": {
+                        "x": 33.697116,
+                        "y": 50.34386
+                    },
+                    "uuid": "02f815e6-4c6a-43f5-9a26-048deed36aca"
+                },
+                {
+                    "description": "Pad 1 [/I2C_SDA] of JMP11 on F.Cu",
+                    "pos": {
+                        "x": 32.984887,
+                        "y": 49.827006
+                    },
+                    "uuid": "b8eb56f5-0736-410a-8ff9-227e102c549f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of JMP10 on F.Silkscreen",
+                    "pos": {
+                        "x": 33.854181,
+                        "y": 48.53065
+                    },
+                    "uuid": "1b563f5b-dea2-43bb-b15f-b7c4921d7e35"
+                },
+                {
+                    "description": "Pad 2 [/I2C_SDA] of JMP11 on F.Cu",
+                    "pos": {
+                        "x": 36.015113,
+                        "y": 49.172994
+                    },
+                    "uuid": "3afef057-fe98-4d97-b421-0b3c8f59f11c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R19",
+                    "pos": {
+                        "x": 65.0,
+                        "y": 59.55
+                    },
+                    "uuid": "044ced99-a70c-40be-8ab8-403a49d8052c"
+                },
+                {
+                    "description": "Pad 1 [/3V3_RAIL] of U3 on F.Cu",
+                    "pos": {
+                        "x": 65.65,
+                        "y": 60.19
+                    },
+                    "uuid": "6bddc755-f64e-4587-bd48-60370292a9a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of D2",
+                    "pos": {
+                        "x": 59.0,
+                        "y": 51.27
+                    },
+                    "uuid": "4190dde1-4349-4170-8ae0-2fc2625230c4"
+                },
+                {
+                    "description": "Pad 1 [/M2_GPIO] of R3 on F.Cu",
+                    "pos": {
+                        "x": 58.45,
+                        "y": 51.0
+                    },
+                    "uuid": "3b64e81a-dce4-4963-bb5b-fbbd9613473c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of U_LDO1",
+                    "pos": {
+                        "x": 53.0,
+                        "y": 53.37
+                    },
+                    "uuid": "7758c477-74d1-43d4-8e93-8f199961acc3"
+                },
+                {
+                    "description": "Pad 31 [/M7_GPIO] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 54.75,
+                        "y": 53.63
+                    },
+                    "uuid": "35c1c85a-e8b4-4c61-92ec-27f5ef44f067"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of U_LDO1",
+                    "pos": {
+                        "x": 53.0,
+                        "y": 53.37
+                    },
+                    "uuid": "7758c477-74d1-43d4-8e93-8f199961acc3"
+                },
+                {
+                    "description": "Pad 2 [/M1_GPIO] of JMP17 on F.Cu",
+                    "pos": {
+                        "x": 52.279937,
+                        "y": 53.374221
+                    },
+                    "uuid": "eee6edcb-656c-4674-b477-a83a99e03f59"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of JMP06",
+                    "pos": {
+                        "x": 79.454621,
+                        "y": 51.519844
+                    },
+                    "uuid": "ad65d122-7c5d-478b-a84e-053c6953f626"
+                },
+                {
+                    "description": "Pad 1 [/M1_DRV] of U_DRV1 on F.Cu",
+                    "pos": {
+                        "x": 77.35,
+                        "y": 52.92
+                    },
+                    "uuid": "8c2b2073-4e86-4409-8d61-7a887a4618bd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of U_DRV1 on F.Silkscreen",
+                    "pos": {
+                        "x": 78.14,
+                        "y": 52.115
+                    },
+                    "uuid": "8b7d1f38-6dd7-491b-b6d7-c9b9a3adadc4"
+                },
+                {
+                    "description": "Pad 2 [/M3_DRV] of JMP06 on F.Cu",
+                    "pos": {
+                        "x": 81.830186,
+                        "y": 51.191073
+                    },
+                    "uuid": "7420ee30-1bee-4588-8628-655d5886dc1c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of R_J4 on F.Silkscreen",
+                    "pos": {
+                        "x": 81.272936,
+                        "y": 69.09
+                    },
+                    "uuid": "70e63069-8308-4d37-a391-03164eaf1424"
+                },
+                {
+                    "description": "Pad 2 [/M7_DRV] of JMP09 on F.Cu",
+                    "pos": {
+                        "x": 81.320609,
+                        "y": 69.016479
+                    },
+                    "uuid": "dea9ee9c-6bab-4448-b845-d792d3197de9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of JMP07 on F.Silkscreen",
+                    "pos": {
+                        "x": 79.842115,
+                        "y": 59.873417
+                    },
+                    "uuid": "d358709e-1ae2-4b99-ba15-4ef637a33549"
+                },
+                {
+                    "description": "Pad 1 [/M6_DRV] of JMP08 on F.Cu",
+                    "pos": {
+                        "x": 80.486279,
+                        "y": 61.537608
+                    },
+                    "uuid": "69a7fc35-029d-4a31-b788-83a58887a436"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of U_DRV1 on F.Silkscreen",
+                    "pos": {
+                        "x": 85.86,
+                        "y": 63.885
+                    },
+                    "uuid": "b101eff3-06a1-4516-849a-3fede729f484"
+                },
+                {
+                    "description": "Pad 2 [/M6_DRV] of JMP08 on F.Cu",
+                    "pos": {
+                        "x": 81.513721,
+                        "y": 64.462392
+                    },
+                    "uuid": "b76d9722-b323-46bd-918a-95f95152839f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of JMP09",
+                    "pos": {
+                        "x": 82.790424,
+                        "y": 67.121475
+                    },
+                    "uuid": "955b463e-93b1-41e3-870d-cd1809077f48"
+                },
+                {
+                    "description": "Pad 2 [/M6_DRV] of JMP08 on F.Cu",
+                    "pos": {
+                        "x": 81.513721,
+                        "y": 64.462392
+                    },
+                    "uuid": "b76d9722-b323-46bd-918a-95f95152839f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of JMP17",
+                    "pos": {
+                        "x": 52.032145,
+                        "y": 50.988849
+                    },
+                    "uuid": "2b4ae857-0dab-4d0b-b738-e68ae95add41"
+                },
+                {
+                    "description": "Pad 32 [unconnected-(U_MCU1-NC-Pad32)] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 54.75,
+                        "y": 52.36
+                    },
+                    "uuid": "d30794c0-392e-4c44-8d17-911a6179488c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of U1 on F.Silkscreen",
+                    "pos": {
+                        "x": 73.4125,
+                        "y": 44.995
+                    },
+                    "uuid": "023f03e2-a1fa-461f-b747-05a6f9af2535"
+                },
+                {
+                    "description": "Pad 1 [/3V3_RAIL] of JMP02 on F.Cu",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 44.95
+                    },
+                    "uuid": "fadac891-78f0-4e7c-875a-cf711c0fcf2d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of JMP09",
+                    "pos": {
+                        "x": 82.790424,
+                        "y": 67.121475
+                    },
+                    "uuid": "955b463e-93b1-41e3-870d-cd1809077f48"
+                },
+                {
+                    "description": "Pad 2 [/12V_PROT] of R_J4 on F.Cu",
+                    "pos": {
+                        "x": 83.55,
+                        "y": 70.0
+                    },
+                    "uuid": "3f43b540-04d6-4c3f-9f11-2279c31abbdf"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of JMP05",
+                    "pos": {
+                        "x": 72.062446,
+                        "y": 54.952713
+                    },
+                    "uuid": "4a459c51-f27a-49b5-9ac5-e8d90a48bab6"
+                },
+                {
+                    "description": "Pad 6 [/12V_PROT] of U2 on F.Cu",
+                    "pos": {
+                        "x": 74.35,
+                        "y": 53.27
+                    },
+                    "uuid": "30a0a267-b644-42b2-b0d3-56e044c4d520"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of JMP08",
+                    "pos": {
+                        "x": 82.726566,
+                        "y": 62.393478
+                    },
+                    "uuid": "14d8a11f-9e69-4521-af5b-1e773f2e1331"
+                },
+                {
+                    "description": "Pad 2 [/M5_DRV] of JMP07 on F.Cu",
+                    "pos": {
+                        "x": 81.830186,
+                        "y": 61.308927
+                    },
+                    "uuid": "6b5ea961-991a-464f-9381-b075a87c90ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of JMP08 on F.Silkscreen",
+                    "pos": {
+                        "x": 81.617593,
+                        "y": 62.012427
+                    },
+                    "uuid": "fd9677ce-6c67-434f-a23f-7ccf58a11e4f"
+                },
+                {
+                    "description": "Pad 2 [/M5_DRV] of JMP07 on F.Cu",
+                    "pos": {
+                        "x": 81.830186,
+                        "y": 61.308927
+                    },
+                    "uuid": "6b5ea961-991a-464f-9381-b075a87c90ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of JMP03",
+                    "pos": {
+                        "x": 28.706927,
+                        "y": 12.659773
+                    },
+                    "uuid": "81c3a900-b2fd-4c9b-80ff-0fc17189aed0"
+                },
+                {
+                    "description": "Pad 8 [/GND] of U_BUCK1 on F.Cu",
+                    "pos": {
+                        "x": 29.475,
+                        "y": 14.095
+                    },
+                    "uuid": "4241068f-a57c-4ecd-b7e4-41c958993d51"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of JMP11 on F.Silkscreen",
+                    "pos": {
+                        "x": 33.597317,
+                        "y": 48.763872
+                    },
+                    "uuid": "c9eb1e35-36d4-4f06-aa22-69b6eadae0f4"
+                },
+                {
+                    "description": "Pad 1 [/I2C_SCL] of JMP10 on F.Cu",
+                    "pos": {
+                        "x": 32.955783,
+                        "y": 49.366236
+                    },
+                    "uuid": "573ad9fe-69a4-4966-90b0-ff13b580800b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of JMP11 on F.Silkscreen",
+                    "pos": {
+                        "x": 33.981283,
+                        "y": 50.542908
+                    },
+                    "uuid": "d6edca3f-264d-4c17-81b9-05b6909bdabc"
+                },
+                {
+                    "description": "Pad 2 [/I2C_SCL] of JMP10 on F.Cu",
+                    "pos": {
+                        "x": 36.044217,
+                        "y": 49.633764
+                    },
+                    "uuid": "cf105092-cc41-4502-9be7-9edc9aaaa87f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of D_TVS1 on F.Silkscreen",
+                    "pos": {
+                        "x": 12.29,
+                        "y": 5.85
+                    },
+                    "uuid": "7c6db2df-1de3-4459-af7d-40b861cca1c9"
+                },
+                {
+                    "description": "NPTH pad of MH1",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 4.0
+                    },
+                    "uuid": "d714679d-9acc-4c2a-a85e-7019991efea3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of U_BUCK1 on F.Silkscreen",
+                    "pos": {
+                        "x": 24.94,
+                        "y": 13.44
+                    },
+                    "uuid": "2b11e15c-b366-4522-82f7-81bbab94be86"
+                },
+                {
+                    "description": "Pad 2 [/GND] of JMP03 on F.Cu",
+                    "pos": {
+                        "x": 26.441176,
+                        "y": 13.445758
+                    },
+                    "uuid": "e79c6ba0-afc4-4b3a-ac2e-caedd97aa129"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of C_BULK1 on F.Silkscreen",
+                    "pos": {
+                        "x": 24.654437,
+                        "y": 11.41
+                    },
+                    "uuid": "365a9e34-b2b1-46dc-82c3-bc6f7f2068cd"
+                },
+                {
+                    "description": "Pad 1 [/GND] of JMP03 on F.Cu",
+                    "pos": {
+                        "x": 27.558824,
+                        "y": 10.554242
+                    },
+                    "uuid": "34a6137a-615b-46de-a415-378cb3eed527"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of JMP11",
+                    "pos": {
+                        "x": 34.113922,
+                        "y": 47.711189
+                    },
+                    "uuid": "0073c259-5a5d-47d7-b3c4-9e497ae224f6"
+                },
+                {
+                    "description": "Pad 1 [/I2C_SCL] of JMP10 on F.Cu",
+                    "pos": {
+                        "x": 32.955783,
+                        "y": 49.366236
+                    },
+                    "uuid": "573ad9fe-69a4-4966-90b0-ff13b580800b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of JMP01",
+                    "pos": {
+                        "x": 23.557095,
+                        "y": 82.506196
+                    },
+                    "uuid": "d62531a7-47aa-4f29-8dfe-43ef19733e92"
+                },
+                {
+                    "description": "Pad 5 [/GND] of U5 on F.Cu",
+                    "pos": {
+                        "x": 25.65,
+                        "y": 84.19
+                    },
+                    "uuid": "2ddd9eae-e4d3-42da-ad63-0f66037044d3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of JMP19 on F.Silkscreen",
+                    "pos": {
+                        "x": 25.868755,
+                        "y": 75.277503
+                    },
+                    "uuid": "5c2dd9a5-a7b6-49af-8a07-4bdda195a5cd"
+                },
+                {
+                    "description": "Pad 1 [/SENS2_A] of JMP18 on F.Cu",
+                    "pos": {
+                        "x": 26.111609,
+                        "y": 76.270142
+                    },
+                    "uuid": "898b8907-860d-4093-828f-a88f0a601acc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of JMP19 on F.Silkscreen",
+                    "pos": {
+                        "x": 27.520365,
+                        "y": 76.042086
+                    },
+                    "uuid": "47e5a271-cdc1-41b2-9414-7c2491f486bc"
+                },
+                {
+                    "description": "Pad 2 [/SENS2_A] of JMP18 on F.Cu",
+                    "pos": {
+                        "x": 27.888391,
+                        "y": 73.729858
+                    },
+                    "uuid": "55422bfd-d170-4f6d-8423-2e3803a650a7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

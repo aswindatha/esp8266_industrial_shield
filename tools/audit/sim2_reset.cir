@@ -1,0 +1,10 @@
+* SIM2: ESP32 EN reset RC = R19 10k x C4 10uF = 100 ms
+V3 three3 0 PULSE(0 3.3 0 1m 1m 5 10)
+R19 three3 en 10k
+C4 en 0 10u
+.tran 5m 1
+.control
+run
+wrdata C:/Users/aswin/Music/PCB/ep/tools/audit/sim2_out.txt V(three3) V(en)
+.endc
+.end

@@ -1,0 +1,15 @@
+* SIM4: sensor input 0-24V sweep through R9 2.2k + LTV827S LED,
+* collector pull-up R15 4.7k to 3.3V, phototransistor saturates at ~0.2V
+Vsens sens 0 DC 0
+R9 sens anode 2200
+DLED anode 0 DLED
+V33 v33 0 DC 3.3
+R15 v33 coll 4700
+GPHOTO coll 0 VALUE={min(max(0,0.8*(V(sens)-1.2)/2200),0.00066)}
+.model DLED D(IS=1e-12 N=1.8)
+.dc Vsens 0 24 0.05
+.control
+run
+wrdata C:/Users/aswin/Music/PCB/ep/tools/audit/sim4_out.txt V(sens) V(anode) V(coll)
+.endc
+.end

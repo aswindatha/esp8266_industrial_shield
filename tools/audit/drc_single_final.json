@@ -1,0 +1,781 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-23T08:41:37",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "ind_8ch_motor_ctrl.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/3V3_RAIL] on F.Cu, length 2.4510 mm",
+                    "pos": {
+                        "x": 16.7723,
+                        "y": 88.6733
+                    },
+                    "uuid": "ac245c69-e7ad-44c4-afd0-8185e18849ab"
+                },
+                {
+                    "description": "Track [/3V3_RAIL] on F.Cu, length 4.0000 mm",
+                    "pos": {
+                        "x": 20.55,
+                        "y": 82.0
+                    },
+                    "uuid": "6628489b-62e8-44f0-a08d-e409487d812f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/3V3_RAIL] on F.Cu, length 2.2312 mm",
+                    "pos": {
+                        "x": 65.65,
+                        "y": 48.19
+                    },
+                    "uuid": "b504de24-0ca4-4405-b607-cbee815f02a3"
+                },
+                {
+                    "description": "Track [/3V3_RAIL] on F.Cu, length 2.2394 mm",
+                    "pos": {
+                        "x": 65.65,
+                        "y": 41.27
+                    },
+                    "uuid": "39fdc36c-4c64-43d8-aa7b-458a7e81e60a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 13.5235 mm",
+                    "pos": {
+                        "x": 31.3364,
+                        "y": 12.2336
+                    },
+                    "uuid": "0d5fc9b2-ab50-47b7-a673-6cc8b725c4bd"
+                },
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.2262 mm",
+                    "pos": {
+                        "x": 29.7,
+                        "y": 8.0
+                    },
+                    "uuid": "ebdafad0-7683-4826-8655-e9faafc75e9a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 3.5857 mm",
+                    "pos": {
+                        "x": 45.65,
+                        "y": 84.19
+                    },
+                    "uuid": "4ab802d2-a824-4baa-85c2-d34d890d513c"
+                },
+                {
+                    "description": "Track [/GND] on F.Cu, length 4.9483 mm",
+                    "pos": {
+                        "x": 40.285,
+                        "y": 57.5517
+                    },
+                    "uuid": "79d8631c-0dd6-42ec-845f-a2b4fb9e64dc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 9 [/GND] of U_DRV1 on F.Cu",
+                    "pos": {
+                        "x": 77.35,
+                        "y": 63.08
+                    },
+                    "uuid": "f06a0719-3504-4b8c-bd4e-2338692768e3"
+                },
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.7543 mm",
+                    "pos": {
+                        "x": 67.8417,
+                        "y": 44.2115
+                    },
+                    "uuid": "c0b05f99-4411-402e-b3a7-f5b91b874268"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 7 [/M3_DRV] of U2 on F.Cu",
+                    "pos": {
+                        "x": 74.35,
+                        "y": 50.73
+                    },
+                    "uuid": "8d643b00-0824-4245-a75d-c46f039565c3"
+                },
+                {
+                    "description": "Pad 3 [/M3_DRV] of U_DRV1 on F.Cu",
+                    "pos": {
+                        "x": 77.35,
+                        "y": 55.46
+                    },
+                    "uuid": "c37b0ed9-5221-4487-97f2-c8d4386b4cd9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 7 [/M5_DRV] of U3 on F.Cu",
+                    "pos": {
+                        "x": 74.35,
+                        "y": 62.73
+                    },
+                    "uuid": "aa396bd2-c9e3-4453-9542-2890e29cd9ed"
+                },
+                {
+                    "description": "Pad 5 [/M5_DRV] of U_DRV1 on F.Cu",
+                    "pos": {
+                        "x": 77.35,
+                        "y": 58.0
+                    },
+                    "uuid": "4fe604c2-b37e-4fe8-994e-12ae6ada2fdf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 5 [/M6_DRV] of U3 on F.Cu",
+                    "pos": {
+                        "x": 74.35,
+                        "y": 67.81
+                    },
+                    "uuid": "fc388100-a1e3-4c01-8117-2ac29485b1c3"
+                },
+                {
+                    "description": "Pad 6 [/M6_DRV] of U_DRV1 on F.Cu",
+                    "pos": {
+                        "x": 77.35,
+                        "y": 59.27
+                    },
+                    "uuid": "f45a1554-ae3b-42ec-84e3-ee13c0139da6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 7 [/M7_DRV] of U4 on F.Cu",
+                    "pos": {
+                        "x": 74.35,
+                        "y": 74.73
+                    },
+                    "uuid": "76f531c3-8149-4274-8544-871ce0fb3473"
+                },
+                {
+                    "description": "Pad 7 [/M7_DRV] of U_DRV1 on F.Cu",
+                    "pos": {
+                        "x": 77.35,
+                        "y": 60.54
+                    },
+                    "uuid": "f1b68a77-b03b-43f3-a3a2-fc257906d999"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/I2C_SCL] on F.Cu, length 10.7921 mm",
+                    "pos": {
+                        "x": 18.5467,
+                        "y": 52.0967
+                    },
+                    "uuid": "41213e34-4803-4d41-b77c-159b0c0fad19"
+                },
+                {
+                    "description": "Pad 36 [/I2C_SCL] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 54.75,
+                        "y": 47.28
+                    },
+                    "uuid": "cbe9901b-61ac-44a7-bd5c-1dfb116850d7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/I2C_SDA] on F.Cu, length 2.8991 mm",
+                    "pos": {
+                        "x": 14.95,
+                        "y": 42.5
+                    },
+                    "uuid": "79cbfd5a-d14e-4777-916f-0b5e8a38f95d"
+                },
+                {
+                    "description": "Pad 33 [/I2C_SDA] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 54.75,
+                        "y": 51.09
+                    },
+                    "uuid": "c2493289-1fe5-4be4-b830-f7937fcfcd10"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 11 [/UART_TX] of J_IN",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 52.5
+                    },
+                    "uuid": "1c5dec8b-57ea-476e-8266-fbcec82fc9ae"
+                },
+                {
+                    "description": "Pad 35 [/UART_TX] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 54.75,
+                        "y": 48.55
+                    },
+                    "uuid": "deab90be-89d2-4101-b767-245a7adeaf99"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 12 [/UART_RX] of J_IN",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 57.5
+                    },
+                    "uuid": "266d6e1b-a5c0-4569-8545-a98682724cb3"
+                },
+                {
+                    "description": "Pad 34 [/UART_RX] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 54.75,
+                        "y": 49.82
+                    },
+                    "uuid": "6a9cd8a1-9097-4795-a4d0-a210a3e60f09"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 8 [/SENS1_COL] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 37.25,
+                        "y": 53.63
+                    },
+                    "uuid": "72b92090-506d-437e-b981-e01a6a987e94"
+                },
+                {
+                    "description": "Track [/SENS1_COL] on F.Cu, length 1.5272 mm",
+                    "pos": {
+                        "x": 16.3701,
+                        "y": 83.0799
+                    },
+                    "uuid": "3d160bed-079f-4088-9ba5-d2697cc12d27"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/SENS3_COL] on F.Cu, length 2.1381 mm",
+                    "pos": {
+                        "x": 44.1381,
+                        "y": 93.3219
+                    },
+                    "uuid": "25bda8d5-e290-46d2-90af-0f07cb94ae11"
+                },
+                {
+                    "description": "Pad 6 [/SENS3_COL] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 37.25,
+                        "y": 51.09
+                    },
+                    "uuid": "98890a2c-4d69-4f9a-b50a-37af848d4967"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/SENS4_COL] of R18 on F.Cu",
+                    "pos": {
+                        "x": 26.45,
+                        "y": 98.0
+                    },
+                    "uuid": "f8b67c54-e82d-4fe4-8cda-1de63f867739"
+                },
+                {
+                    "description": "Track [/SENS4_COL] on F.Cu, length 9.1242 mm",
+                    "pos": {
+                        "x": 52.1018,
+                        "y": 93.1818
+                    },
+                    "uuid": "bcf7f5ff-3753-4ec0-a6dc-c41415d394a7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 13 [/M1_GPIO] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 37.25,
+                        "y": 59.98
+                    },
+                    "uuid": "4f6c9008-39be-4a3b-aa48-a747ab10aa54"
+                },
+                {
+                    "description": "Pad 1 [/M1_GPIO] of R2 on F.Cu",
+                    "pos": {
+                        "x": 58.45,
+                        "y": 45.5
+                    },
+                    "uuid": "b8137b9f-8508-4b83-8cf0-a6028ec9a5f7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/SENS2_A] of R10 on F.Cu",
+                    "pos": {
+                        "x": 20.55,
+                        "y": 67.0
+                    },
+                    "uuid": "902c9eb3-5e9d-44c2-80db-7c0f2aa4c33b"
+                },
+                {
+                    "description": "Pad 3 [/SENS2_A] of U5 on F.Cu",
+                    "pos": {
+                        "x": 34.35,
+                        "y": 86.73
+                    },
+                    "uuid": "01545185-0bc5-4a52-80cf-fe85b8c24b33"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/SENS1_A] of R9 on F.Cu",
+                    "pos": {
+                        "x": 20.55,
+                        "y": 62.0
+                    },
+                    "uuid": "c1cb08d7-b2a3-4d92-ac81-12fe2564a495"
+                },
+                {
+                    "description": "Pad 1 [/SENS1_A] of U5 on F.Cu",
+                    "pos": {
+                        "x": 34.35,
+                        "y": 91.81
+                    },
+                    "uuid": "3a776d69-ff20-49de-bdb0-249642266055"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "NPTH pad of MH1",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 4.0
+                    },
+                    "uuid": "d714679d-9acc-4c2a-a85e-7019991efea3"
+                },
+                {
+                    "description": "Pad 1 [/12V_PROT] of D_TVS1 on F.Cu",
+                    "pos": {
+                        "x": 14.3,
+                        "y": 8.0
+                    },
+                    "uuid": "8e05ee16-5ec3-424b-8a0b-70818e3008f3"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "NPTH pad of MH1",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 4.0
+                    },
+                    "uuid": "d714679d-9acc-4c2a-a85e-7019991efea3"
+                },
+                {
+                    "description": "Pad 1 [/12V_PROT] of D_TVS1 on F.Cu",
+                    "pos": {
+                        "x": 14.3,
+                        "y": 8.0
+                    },
+                    "uuid": "8e05ee16-5ec3-424b-8a0b-70818e3008f3"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "NPTH pad of MH1",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 4.0
+                    },
+                    "uuid": "d714679d-9acc-4c2a-a85e-7019991efea3"
+                },
+                {
+                    "description": "Pad 1 [/12V_PROT] of D_TVS1 on F.Cu",
+                    "pos": {
+                        "x": 14.3,
+                        "y": 8.0
+                    },
+                    "uuid": "8e05ee16-5ec3-424b-8a0b-70818e3008f3"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "NPTH pad of MH1",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 4.0
+                    },
+                    "uuid": "d714679d-9acc-4c2a-a85e-7019991efea3"
+                },
+                {
+                    "description": "Pad 1 [/12V_PROT] of D_TVS1 on F.Cu",
+                    "pos": {
+                        "x": 14.3,
+                        "y": 8.0
+                    },
+                    "uuid": "8e05ee16-5ec3-424b-8a0b-70818e3008f3"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Footprint 'ESP32-WROOM-32E' does not match copy in library 'RF_Module'",
+            "items": [
+                {
+                    "description": "Footprint U_MCU1",
+                    "pos": {
+                        "x": 46.0,
+                        "y": 50.0
+                    },
+                    "uuid": "74c28b57-abff-40c3-aba3-bfb47bd642f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'MountingHole_3.2mm' not found in library 'MountingHole'",
+            "items": [
+                {
+                    "description": "Footprint MH4",
+                    "pos": {
+                        "x": 86.0,
+                        "y": 96.0
+                    },
+                    "uuid": "83922c87-d29b-4be7-bdbe-a95b6a51bdc5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'MountingHole_3.2mm' not found in library 'MountingHole'",
+            "items": [
+                {
+                    "description": "Footprint MH3",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 96.0
+                    },
+                    "uuid": "addadc34-ac5d-4db4-9f9c-305eda126004"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'MountingHole_3.2mm' not found in library 'MountingHole'",
+            "items": [
+                {
+                    "description": "Footprint MH1",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 4.0
+                    },
+                    "uuid": "b77b95a8-3d62-4521-bc44-92fbdab87349"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'MountingHole_3.2mm' not found in library 'MountingHole'",
+            "items": [
+                {
+                    "description": "Footprint MH2",
+                    "pos": {
+                        "x": 86.0,
+                        "y": 4.0
+                    },
+                    "uuid": "f9f6e3d4-da3e-4b6a-a366-565c65e45cb7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of R19",
+                    "pos": {
+                        "x": 65.0,
+                        "y": 59.55
+                    },
+                    "uuid": "044ced99-a70c-40be-8ab8-403a49d8052c"
+                },
+                {
+                    "description": "Polygon of U3 on F.Silkscreen",
+                    "pos": {
+                        "x": 64.24,
+                        "y": 60.19
+                    },
+                    "uuid": "f42edd5b-d14a-430c-b107-7eea93d1438b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of J_IN",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 50.0
+                    },
+                    "uuid": "7778b581-dec4-48be-825f-72f9bb24ae82"
+                },
+                {
+                    "description": "Reference field of R14",
+                    "pos": {
+                        "x": 14.95,
+                        "y": 49.15
+                    },
+                    "uuid": "832a29db-b17c-439a-ad4d-382762933ac2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of D_TVS1 on F.Silkscreen",
+                    "pos": {
+                        "x": 12.29,
+                        "y": 5.85
+                    },
+                    "uuid": "7c6db2df-1de3-4459-af7d-40b861cca1c9"
+                },
+                {
+                    "description": "NPTH pad of MH1",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 4.0
+                    },
+                    "uuid": "d714679d-9acc-4c2a-a85e-7019991efea3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R19",
+                    "pos": {
+                        "x": 65.0,
+                        "y": 59.55
+                    },
+                    "uuid": "044ced99-a70c-40be-8ab8-403a49d8052c"
+                },
+                {
+                    "description": "Pad 1 [/3V3_RAIL] of U3 on F.Cu",
+                    "pos": {
+                        "x": 65.65,
+                        "y": 60.19
+                    },
+                    "uuid": "6bddc755-f64e-4587-bd48-60370292a9a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of U_LDO1",
+                    "pos": {
+                        "x": 53.0,
+                        "y": 53.37
+                    },
+                    "uuid": "7758c477-74d1-43d4-8e93-8f199961acc3"
+                },
+                {
+                    "description": "Pad 31 [/M7_GPIO] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 54.75,
+                        "y": 53.63
+                    },
+                    "uuid": "35c1c85a-e8b4-4c61-92ec-27f5ef44f067"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'NC' on F.Silkscreen",
+                    "pos": {
+                        "x": 88.5,
+                        "y": 97.5
+                    },
+                    "uuid": "04f5bb6a-2c6e-483e-b4aa-61cdabd0f801"
+                },
+                {
+                    "description": "NPTH pad of MH4",
+                    "pos": {
+                        "x": 86.0,
+                        "y": 96.0
+                    },
+                    "uuid": "9253f858-cc04-40c9-9bc5-1c857f8478a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

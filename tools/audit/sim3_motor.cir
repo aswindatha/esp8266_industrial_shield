@@ -1,0 +1,20 @@
+* SIM3: one motor channel GPIO(active low)->330R->LTV827S(CTR 0.8)->ULN2803A
+* driving a 10 mH inductive load with COM clamp to 12V_PROT.
+* Behavioral abstraction of the opto+ULN chain; preserves I/O and clamp physics.
+V33 v33 0 DC 3.3
+V12 prot 0 DC 12
+VGPIO gpio 0 PULSE(3.3 0 0.05 1m 1m 0.08 0.2)
+DLED v33 ledc DLED
+R1 ledc gpio 330
+GOUT mot 0 VALUE={min(0.5,max(0,0.8*(3.3-V(ledc))/330*1000))}
+RCOIL prot n1 24
+LLOAD n1 mot 10m
+DCLAMP mot prot DCLAMP
+.model DLED D(IS=1e-12 N=1.8)
+.model DCLAMP D(IS=1e-10 RS=0.02 N=1.2)
+.tran 0.5m 0.3
+.control
+run
+wrdata C:/Users/aswin/Music/PCB/ep/tools/audit/sim3_out.txt V(gpio) V(ledc) V(mot)
+.endc
+.end

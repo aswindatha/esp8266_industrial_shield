@@ -1,0 +1,442 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-22T22:42:49",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "ind_8ch_motor_ctrl.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Items not allowed (keepout area 'ESP32_ANTENNA_KEEPOUT')",
+            "items": [
+                {
+                    "description": "Pad 1 [/GND] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 55.25,
+                        "y": 15.74
+                    },
+                    "uuid": "28c328f0-0471-49e8-b86c-653354aef05e"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed (keepout area 'ESP32_ANTENNA_KEEPOUT')",
+            "items": [
+                {
+                    "description": "Pad 38 [/GND] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 72.75,
+                        "y": 15.74
+                    },
+                    "uuid": "e34b3d49-6c57-43f4-8bd9-e7c78dbb0e1b"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items shorting two nets (nets /GND and /UART_TX)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 0.5583 mm",
+                    "pos": {
+                        "x": 56.7777,
+                        "y": 16.1348
+                    },
+                    "uuid": "8678bd07-eb50-403a-8409-8f04f8a68c3d"
+                },
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 24.2300 mm",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 16.2
+                    },
+                    "uuid": "d3e10c51-fc1c-4e3f-b816-201e622306b7"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.1100 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 10.6867 mm",
+                    "pos": {
+                        "x": 46.5167,
+                        "y": 8.1833
+                    },
+                    "uuid": "d3297a4f-b089-4985-b1f9-9e8b2fe8bd56"
+                },
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 24.2300 mm",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 16.2
+                    },
+                    "uuid": "d3e10c51-fc1c-4e3f-b816-201e622306b7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /UART_TX and /GND)",
+            "items": [
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 12.8600 mm",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 3.34
+                    },
+                    "uuid": "0eec9b71-033d-4fbc-b8e8-ead8aeb581f2"
+                },
+                {
+                    "description": "Pad 2 [/GND] of D2 on F.Cu",
+                    "pos": {
+                        "x": 48.7,
+                        "y": 6.0
+                    },
+                    "uuid": "e2c2e5e5-c835-4de7-ac06-bf0a4e9a2e64"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.1850 mm)",
+            "items": [
+                {
+                    "description": "Pad 37 [/M8_GPIO] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 72.75,
+                        "y": 17.01
+                    },
+                    "uuid": "1effe937-5bc8-403b-b8bb-83cd1c91e202"
+                },
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 24.2300 mm",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 16.2
+                    },
+                    "uuid": "d3e10c51-fc1c-4e3f-b816-201e622306b7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.1538 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.1329 mm",
+                    "pos": {
+                        "x": 72.75,
+                        "y": 15.74
+                    },
+                    "uuid": "77fcca14-5c86-41ba-975e-5418b3549dff"
+                },
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 24.2300 mm",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 16.2
+                    },
+                    "uuid": "d3e10c51-fc1c-4e3f-b816-201e622306b7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /GND and /UART_TX)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 7.1223 mm",
+                    "pos": {
+                        "x": 63.9,
+                        "y": 16.1348
+                    },
+                    "uuid": "4eaa54e9-aae8-423d-8b26-5ff762621b0e"
+                },
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 24.2300 mm",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 16.2
+                    },
+                    "uuid": "d3e10c51-fc1c-4e3f-b816-201e622306b7"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /GND and /UART_TX)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 0.5583 mm",
+                    "pos": {
+                        "x": 71.6171,
+                        "y": 15.74
+                    },
+                    "uuid": "4925a882-6123-4d9b-8a56-e434a3274627"
+                },
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 24.2300 mm",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 16.2
+                    },
+                    "uuid": "d3e10c51-fc1c-4e3f-b816-201e622306b7"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /GND and /UART_TX)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 7.3223 mm",
+                    "pos": {
+                        "x": 71.2223,
+                        "y": 16.1348
+                    },
+                    "uuid": "39092f35-b30b-4bbb-82f4-cd23d4df2a5d"
+                },
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 24.2300 mm",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 16.2
+                    },
+                    "uuid": "d3e10c51-fc1c-4e3f-b816-201e622306b7"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 5.0485 mm",
+                    "pos": {
+                        "x": 63.9,
+                        "y": 16.1348
+                    },
+                    "uuid": "28a27b8c-ed44-455d-9b1d-a7a68608d729"
+                },
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 24.2300 mm",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 16.2
+                    },
+                    "uuid": "d3e10c51-fc1c-4e3f-b816-201e622306b7"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [/3V3_RAIL] on F.Cu, length 4.7434 mm",
+                    "pos": {
+                        "x": 50.5656,
+                        "y": 13.8533
+                    },
+                    "uuid": "6eaf6948-f875-4d0c-8dbc-be81dcb8cf85"
+                },
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 24.2300 mm",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 16.2
+                    },
+                    "uuid": "d3e10c51-fc1c-4e3f-b816-201e622306b7"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 12.8600 mm",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 3.34
+                    },
+                    "uuid": "0eec9b71-033d-4fbc-b8e8-ead8aeb581f2"
+                },
+                {
+                    "description": "Pad 2 [/GND] of D2 on F.Cu",
+                    "pos": {
+                        "x": 48.7,
+                        "y": 6.0
+                    },
+                    "uuid": "e2c2e5e5-c835-4de7-ac06-bf0a4e9a2e64"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 24.2300 mm",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 16.2
+                    },
+                    "uuid": "d3e10c51-fc1c-4e3f-b816-201e622306b7"
+                },
+                {
+                    "description": "Pad 38 [/GND] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 72.75,
+                        "y": 15.74
+                    },
+                    "uuid": "e34b3d49-6c57-43f4-8bd9-e7c78dbb0e1b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/UART_TX] on F.Cu, length 24.2300 mm",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 16.2
+                    },
+                    "uuid": "d3e10c51-fc1c-4e3f-b816-201e622306b7"
+                },
+                {
+                    "description": "Pad 1 [/GND] of U_MCU1 on F.Cu",
+                    "pos": {
+                        "x": 55.25,
+                        "y": 15.74
+                    },
+                    "uuid": "28c328f0-0471-49e8-b86c-653354aef05e"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Footprint 'ESP32-WROOM-32E' does not match copy in library 'RF_Module'",
+            "items": [
+                {
+                    "description": "Footprint U_MCU1",
+                    "pos": {
+                        "x": 64.0,
+                        "y": 21.0
+                    },
+                    "uuid": "74c28b57-abff-40c3-aba3-bfb47bd642f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'MountingHole_3.2mm' not found in library 'MountingHole'",
+            "items": [
+                {
+                    "description": "Footprint MH4",
+                    "pos": {
+                        "x": 84.5,
+                        "y": 95.0
+                    },
+                    "uuid": "83922c87-d29b-4be7-bdbe-a95b6a51bdc5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'MountingHole_3.2mm' not found in library 'MountingHole'",
+            "items": [
+                {
+                    "description": "Footprint MH3",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 91.5
+                    },
+                    "uuid": "addadc34-ac5d-4db4-9f9c-305eda126004"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'MountingHole_3.2mm' not found in library 'MountingHole'",
+            "items": [
+                {
+                    "description": "Footprint MH1",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 4.0
+                    },
+                    "uuid": "b77b95a8-3d62-4521-bc44-92fbdab87349"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'MountingHole_3.2mm' not found in library 'MountingHole'",
+            "items": [
+                {
+                    "description": "Footprint MH2",
+                    "pos": {
+                        "x": 84.5,
+                        "y": 5.0
+                    },
+                    "uuid": "f9f6e3d4-da3e-4b6a-a366-565c65e45cb7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        }
+    ]
+}
