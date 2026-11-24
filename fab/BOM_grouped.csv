@@ -3,8 +3,8 @@ Value,Footprint,Qty,References
 10k,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,1,R19
 10uF,Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,4,"C1, C2, C3, C4"
 2.2k,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,4,"R10, R11, R12, R9"
+220R,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,8,"R1, R2, R3, R4, R5, R6, R7, R8"
 220uF/25V,Capacitor_SMD:CP_Elec_6.3x7.7,2,"C_BULK1, C_BULK2"
-330R,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,8,"R1, R2, R3, R4, R5, R6, R7, R8"
 33uH,Inductor_SMD:L_Bourns_SRR1260,1,L1
 4.7k,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,6,"R13, R14, R15, R16, R17, R18"
 AMS1117-3.3,Package_TO_SOT_SMD:SOT-223-3_TabPin2,1,U_LDO1
@@ -12,7 +12,7 @@ ESP32-WROOM-32E,ESP32-WROOM-32E,1,U_MCU1
 INPUT,TerminalBlock_CUI_TB007-508-20_1x20_P5.08mm_Horizontal,1,J_IN
 LTV-827S,Package_SO:SOP-8_6.605x9.655mm_P2.54mm,6,"U1, U2, U3, U4, U5, U6"
 OUTPUT,TerminalBlock_CUI_TB007-508-20_1x20_P5.08mm_Horizontal,1,J_OUT
-SMBJ15A-13-F,Diode_SMD:D_SMB_Handsoldering,1,D_TVS1
+SMBJ18A,Diode_SMD:D_SMB_Handsoldering,1,D_TVS1
 SS34,Diode_SMD:D_SMB_Handsoldering,2,"D1, D2"
 ULN2803,Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm,1,U_DRV1
 XL1509-5.0,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,1,U_BUCK1

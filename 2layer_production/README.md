@@ -12,6 +12,13 @@ manufacturing-ready.
 - `fab/` — individual fabrication artifacts
 - `FINAL_VERIFICATION.md`, `INDIA_MANUFACTURING_REPORT.md`, `COST_REPORT.md`
 
+## Silkscreen pin labels
+Every terminal-block pin is labelled on F.Silkscreen with its function:
+- J_IN: `12VIN, GND, 12VP, SENS1..SENS4, 3V3, SDA, SCL, TX, RX, 13:NC..20:NC`
+- J_OUT: `MOT1..MOT8, 12VP, 10:NC..20:NC`
+
+Labels are compact 0.8 mm text placed clear of all copper (verified DRC-clean).
+
 ## Verification
 - `kicad-cli pcb drc --exit-code-violations` → 0 violations, 0 unconnected, exit 0
 - `kicad-cli sch erc --exit-code-violations` → 0 violations, exit 0

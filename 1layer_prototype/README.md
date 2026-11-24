@@ -23,6 +23,11 @@ equivalent to the 2-layer production board.
 - Minimum theoretical: 6 (one per topologically blocked connection).
 - Installed: 16 (needed after greedy track routing blocked more endpoints).
 
+## Silkscreen pin labels
+All 20 J_IN and 20 J_OUT pins carry F.Silkscreen function labels
+(`12VIN, GND, 12VP, SENS1..4, 3V3, SDA, SCL, TX, RX, 13:NC..20:NC` and
+`MOT1..8, 12VP, 10:NC..20:NC`), placed clear of copper and DRC-verified.
+
 ## Files
 - `ind_8ch_motor_ctrl.kicad_pcb` — board with jumpers
 - `ind_8ch_motor_ctrl.kicad_pro` — project with documented exclusions

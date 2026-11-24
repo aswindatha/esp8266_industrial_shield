@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,10.0.7-10.0.7~ubuntu26.04.1*%
-%TF.CreationDate,2026-11-24T00:44:32+05:30*%
+%TF.CreationDate,2026-11-24T09:59:13+05:30*%
 %TF.ProjectId,ind_8ch_motor_ctrl,696e645f-3863-4685-9f6d-6f746f725f63,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Soldermask,Top*%
 %TF.FilePolarity,Negative*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 10.0.7-10.0.7~ubuntu26.04.1) date 2026-11-24 00:44:32*
+G04 Created by KiCad (PCBNEW 10.0.7-10.0.7~ubuntu26.04.1) date 2026-11-24 09:59:13*
 %MOMM*%
 %LPD*%
 G01*
