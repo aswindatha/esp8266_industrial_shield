@@ -53,11 +53,16 @@ check('Copper-to-edge rule', r['min_copper_edge_clearance']<=0.3, f"{r['min_copp
 check('No DRC exclusions (clean by design)', len(p['board']['design_settings'].get('drc_exclusions',[]))==0, '0')
 check('Project file complete', 'erc' in p and len(p.get('schematic',{}))>=15, f"{len(p.keys())} top-level keys")
 
-# 5 DRC / ERC JSON
-for jf,label in [('/tmp/AUDIT_drc.json','DRC'),('/tmp/AUDIT_erc.json','ERC')]:
-    d=json.load(open(jf))
-    n=len(d.get('unconnected_items',[]))+len(d.get('violations',[]))
-    check(f'{label} clean (0 violations, 0 unconnected)', n==0, f'{len(d.get("violations",[]))} viol, {len(d.get("unconnected_items",[]))} unconn')
+# 5 DRC / ERC (generated fresh so the audit is self-contained)
+import subprocess, tempfile
+with tempfile.TemporaryDirectory() as td:
+    dj, ej = os.path.join(td,'drc.json'), os.path.join(td,'erc.json')
+    subprocess.run(['kicad-cli','pcb','drc','--format','json','--output',dj,PCB],capture_output=True)
+    subprocess.run(['kicad-cli','sch','erc','--format','json','--output',ej,SCH],capture_output=True)
+    for jf,label in [(dj,'DRC'),(ej,'ERC')]:
+        d=json.load(open(jf))
+        n=len(d.get('unconnected_items',[]))+len(d.get('violations',[]))
+        check(f'{label} clean (0 violations, 0 unconnected)', n==0, f'{len(d.get("violations",[]))} viol, {len(d.get("unconnected_items",[]))} unconn')
 
 # 6 fab files
 required=['ind_8ch_motor_ctrl-F_Cu.gtl','ind_8ch_motor_ctrl-B_Cu.gbl',
